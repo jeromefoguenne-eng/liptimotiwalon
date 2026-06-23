@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="wa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>li ptit motî walon - Dictionnaire Liégeois en ligne</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Traducteur et dictionnaire Wallon-Français / Français-Wallon en ligne basé sur l'œuvre de Jean Haust. Recherchez instantanément en wallon ou en français.">
+  <meta name="keywords" content="wallon, liegeois, moti, dictionnaire, jean haust, li ptit moti walon, belgique, wallonie, langue regionale, traducteur wallon">
+  <meta name="author" content="Antigravity">
+  
+  <!-- OpenGraph Share Cards -->
+  <meta property="og:title" content="li ptit motî walon - Traducteur & Dictionnaire en ligne">
+  <meta property="og:description" content="Recherchez et traduisez instantanément du français au wallon liégeois et inversement. Basé sur les dictionnaires de Jean Haust.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://li-ptit-moti.walon">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Background Glowing Blobs (Wallon Colors: Yellow & Red) -->
+  <div class="bg-glow"></div>
+  <div class="bg-glow-gold"></div>
+
+  <div class="app-container">
+    <!-- Header with Wallon Crest -->
+    <header>
+      <div class="header-crest">
+        <img src="logo.png" alt="logo li ptit motî walon" class="header-logo">
+      </div>
+      <h1 id="app-title">li ptit motî walon</h1>
+      <p class="subtitle">Traducteur et Dictionnaire Liégeois en ligne — Jean Haust</p>
+    </header>
+
+    <!-- Controls Panel (Top-billed Translator Widget) -->
+    <section class="controls-panel">
+      <div class="translator-header">
+        <div class="translator-title">
+          <i class="fa-solid fa-language"></i> Traducteur & Recherche
+        </div>
+        <div class="translator-direction">
+          <span>Français</span>
+          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+          <span>Wallon (Liégeois)</span>
+        </div>
+      </div>
+
+      <!-- Search Input -->
+      <div class="search-bar-wrapper">
+        <input type="text" id="search-box" class="search-input" placeholder="Écrivez un mot en français ou en wallon..." autocomplete="off">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <button id="clear-search" class="clear-search-btn" title="Effacer la recherche">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="tab-btn active" data-filter="all" id="tab-all">
+          <i class="fa-solid fa-globe"></i> Traduction automatique (Les 2)
+        </button>
+        <button class="tab-btn" data-filter="wallon-francais" id="tab-w2f">
+          <i class="fa-solid fa-feather-pointed"></i> Wallon → Français (Tome II)
+        </button>
+        <button class="tab-btn" data-filter="francais-wallon" id="tab-f2w">
+          <i class="fa-solid fa-book-open-reader"></i> Français → Wallon (Tome III)
+        </button>
+      </div>
+    </section>
+
+    <!-- Main Workspace (Grid layout) -->
+    <main class="main-workspace">
+      <!-- Results Section -->
+      <section class="results-section">
+        <div class="results-header">
+          <span id="results-label">Chargement du lexique...</span>
+          <span class="results-count" id="results-count">0</span>
+        </div>
+        
+        <!-- List of Results -->
+        <div class="results-list" id="results-list">
+          <div class="empty-state" id="loading-spinner">
+            <i class="fa-solid fa-circle-notch fa-spin" style="font-size: 2rem; color: var(--accent-gold); margin-bottom: 1rem;"></i>
+            <p>Chargement des mots de Jean Haust...</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sidebar Section -->
+      <aside class="sidebar-section">
+        <!-- Word of the Day Widget (Moved to the top of the sidebar) -->
+        <section class="mot-du-jour" id="widget-mot-du-jour">
+          <div class="widget-title">
+            <i class="fa-solid fa-calendar-day"></i> Li mot do jour (Le mot du jour)
+          </div>
+          <div id="mot-du-jour-container">
+            <div class="empty-state">Sélection du mot en cours...</div>
+          </div>
+        </section>
+
+        <!-- Favorites Panel -->
+        <div class="sidebar-block">
+          <div class="sidebar-title">
+            <span><i class="fa-solid fa-heart" style="color: var(--accent-red); margin-right: 0.5rem;"></i> Favoris</span>
+            <i class="fa-solid fa-bookmark"></i>
+          </div>
+          <div class="sidebar-list" id="favorites-list">
+            <div class="empty-state">Aucun mot favori sauvegardé.</div>
+          </div>
+        </div>
+
+        <!-- Search History Panel -->
+        <div class="sidebar-block">
+          <div class="sidebar-title">
+            <span><i class="fa-solid fa-clock-rotate-left" style="color: var(--accent-gold); margin-right: 0.5rem;"></i> Historique</span>
+            <i class="fa-solid fa-history"></i>
+          </div>
+          <div class="sidebar-list" id="history-list">
+            <div class="empty-state">Aucune recherche récente.</div>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <!-- Detail Modal -->
+  <div class="modal-overlay" id="detail-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title-area">
+          <h2 class="modal-word" id="modal-word">Mot</h2>
+          <span class="badge" id="modal-badge">Tome</span>
+        </div>
+        <button class="close-modal-btn" id="close-modal" aria-label="Fermer">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="definition-text" id="modal-definition">
+          Définition complète...
+        </div>
+      </div>
+      <div class="modal-meta">
+        <span class="meta-ref" id="modal-ref-tome">
+          <i class="fa-solid fa-book-open"></i> Haust, Tome II
+        </span>
+        <span class="meta-ref" id="modal-ref-page">
+          <i class="fa-solid fa-file-lines"></i> Page 12
+        </span>
+        <button id="modal-fav-btn" class="favorite-btn" title="Ajouter aux favoris">
+          <i class="fa-solid fa-heart" style="font-size: 1.25rem;"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
