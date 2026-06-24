@@ -1,0 +1,125 @@
+=== PAGE 1 ===
+
+INTRODUCTION
+CeDictionnaireLiégeois, dontles douze fascicules ontparu en trois ans,
+forme la deuxième partie d'une étude sur le Dialecte wallon de
+Liège. La première partie, publiée en 1927, groupe les mots d'après
+leurfinale :c'estunDictionnairedes Rimes, qui contient,avecla notation
+exacte des syllabes toniques, un inventaire assez complet, mais forcé
+ment concis, des richesses verbales du parler de Liège (x). Une troi
+sième partie — en préparation — doit comprendre le Dictionnaire
+Français-Liégeois: ce sera le dernier volet du triptyque.
+En rédigeant le Dictionnaire Liégeois, j'ai tâché d'écrire un ouvrage
+à la fois pratique et scientifique, qui ne fût pas seulement un lexique
+dialectal, mais une petite encyclopédie, une «somme »de la vie liégeoise,
+expliquant en détail les choses désignées par les mots : coutumes su
+rannées, types locaux, métiers et instruments, ustensiles, mesures et
+jouets,gesteset rites, enun mot tout cequi caractérise le milieuliégeois,
+tout ce que le modernisme nivelle et altère de jour en jour. Un vocabu
+laire est un témoin précieux du passé et du présent d'un peuple; il
+exprime une conception de la vie, une mentalité, des habitudes parti
+culières. Toutcequi présentede l'intérêtà ce point de vue, je l'ai recueilli
+minutieusement :bouts de phrases saisis dans la conversation, proverbes,
+enfantines et devinettes, jeux de mots, plaisanteries et même injures
+stéréotypées. Le lecteur y trouvera sans peine la matière d'une étude
+curieuse sur le tour d'esprit des gens de chez nous, optimiste et bon
+enfant, positif et sentencieux, narquois et frondeur, sarcastique et
+nullement bégueule.
+Voici plus de quarante ans que j'étudie nos dialectes. J'ai appris le
+wallon dès l'enfance et l'ai toujours pratiqué. Le premier mémoire que
+j'ai publié date de 1892 : essai de débutant qui avait tout de même le
+mérite d'apporter des renseignements inédits, puisés à la source orale (2).
+(*)«Ce livre, utile aux versificateurs du terroir, rendra plus de services encore
+aux linguistes » (W. von Waktburg, c. r. dans Zeilschriftfur Rom.Phil., t. 49,
+p. 735). — «Les dictionnaires de ce genre sont pour les philologues d'une grande
+utilité, en particulier pour l'étude de la phonétique des fins de mots et de la déri
+vation; et il serait très souhaitable d'en posséder un grand nombre »(M. Jîoques,
+ç. r. dans Romania, t. 53, p. 600).
+(*)LesparlersduNord etduSud-Est delaprovincedeLiège (en collaboration avec
+Georges Doutrepont). In-8°; 54 pages et 2 cartes, dans Mélanges wallons, 1892.
+
+=== PAGE 2 ===
+
+X INTRODUCTION
+Depuislorsjen'aicesséd'observer, derécolter, decontrôler, brefd'étudier
+nos patois enphilologue,etd'enfaire l'objetquasiunique demes publi
+cations.
+Malgré tant de travaux préparatoires, la pensée de condenser les
+résultatsde mes recherches en une œuvre comme celle-ci, ne s'étaitjamais
+offerte à mon esprit que comme une éventualité très vague, un rêve
+qui me donnait plus d'angoisse que de joie.
+Pourtant, — à l'étranger plus encore peut-être que chez nous, — on
+sentait depuis longtemps le besoin d'un répertoire complet et rigou
+reusement scientifique du parler liégeois, retraçant le tableau clair et
+animé de notre vie régionale. La résolution de tenter l'entreprise ne s'est
+précisée qu'en 1927, au moment où j'achevais la publication duDic
+tionnaire desRimes. Depuis desannées, une grande partie des matériaux
+nécessaires à cette réalisation se trouvaient à pied d'oeuvre. Certaines
+circonstances, quimedéchargèrentdetravaux absorbants, déterminèrent
+alors ma volonté, et aussi l'insistance, déjà ancienne, de quelques amis.
+Je m'empresse derendre hommage auzèle affectueux deJ. M. Remou-
+champs, le véritable créateur et l'animateur infatigable de notre beau
+«Musée de \<x Vie Wallonne ».Si ce livre a pu voir le jour tel qu'il est,
+s'il a pris cette physionomie avenante qui séduit d'emblée tous ceux
+qui l'ouvrent au hasard, s'il se distingue des ouvrages analogues par
+le constant souci des «réalités », c'est à J. M. Remouchamps que nous
+le devons. C'est lui qui m'a conseillé d'enrichir le Dictionnaire Liégeois
+de notes étymologiques et de figures documentaires. H s'est chargé
+de cette dernière partie, pour laquelle il était l'homme compétent par
+excellence. A force de patience, de goût, d'intelligence profonde de la
+vie wallonne, choisissant avec sûreté le document exact, dirigeant avec
+finesse le crayon de l'excellent dessinateur Maurice Salme, il a réalisé
+cette merveilleuse iconographie du folklore liégeois, qui double, aux
+yeux des connaisseurs, la valeur du Dictionnaire. D'autre part, ses
+encouragementset sesconseilsdechaquejourontallégé malourdetâche.
+Non content de m'aider pour le texte de maint article et de commenter
+certaines figures par des notes concises mais substantielles, il a mis sans
+réserve à ma disposition sa parfaite connaissance des choses liégeoises
+et la riche documentation qu'il a réunie au Musée. En vérité, sa colla
+boration a été pour moi d'un prix inestimable.
+Je remercie cordialement tous les «témoins » que j'ai interrogés au
+coursde mesenquêtes: leurs nomsfigurent ci-aprèsà côté du nomdes
+localitésqu'ils représentent. Je dois mettre horspair MUe Alice Gobiet,
+dont l'aide dévouée pendant vingt ans m'a été particulièrement pré-
+
+=== PAGE 3 ===
+
+INTRODUCTION XI
+cieuse. Née à Liège (Cointe) en 1869, MUe Gobiet a fait les études
+d'institutrice à l'Ecole Normale de Fragnée. Liégeoise de vieille roche,
+elle a toujours parlé wallon, en famille ou avec ses voisins, et n'a jamais
+eu d'autre demeure que la maison natale. Douée d'une mémoire éton
+nante et d'une rare faculté d'observation, elle a conservé, avec le voca
+bulaire archaïque de sa grand-mère qui l'a élevée, le culte des vieilles
+traditions qui tombent de plus en plus dans l'oubli. J'ai relu avec elle,
+ligne par ligne, les ouvrages de mes devanciers. Outre une foule de
+phrases d'exemples, de caractère spontané et vraiment populaire, je
+lui dois bon nombre de termes inédits, la plupart signalés par la paren
+thèse (Cointe). On peut juger de la valeur singulière de ce témoin en
+parcourant des centaines d'articles comme ahans, bouwêye, céleri, cha-
+braque,châle, fahe, masté, màyemint, méremint, plâstiker, sprondjiner, etc.,
+ou en relisant sa notice sur «la fabrication du pain par la ménagère
+liégeoise » (BD 14, pp. 6-11 et 16-21).
+J'exprime aussi ma gratitude à tous ceux qui m'ont aidé d'une façon
+quelconque : à mes amis Henri Simon, Edgard Renard, Paul André,
+Louis Remacle, Elisée Legros, Jules Herbillon, Joseph Dusart.
+qui, outre les deux collaborateurs cités ci-dessus, ont bien voulu revoir
+mon travail et me signaler des additions ou des corrections; — au
+maître Adrien de Witte, qui m'a gracieusement permis de reproduire
+en frontispice l'un de ses plus beaux dessins; — à l'habile dessinateur
+Maurice Salme, dont l'inépuisable patience fut si souvent mise à rude
+épreuve; — à mon excellent imprimeur Vaillant-Carmanne et à
+son chefd'atelierM. J. Herkens, qui ont mis tous leurs soins à l'impres
+sion d'un ouvrage de composition délicate et variée; — aux sous
+cripteurs de la première heure (rari nantes), qui ont eu confiance dans
+le succès de cette œuvre, et notamment à ceux qui ont bien voulu la
+prendre sous leur patronage, me permettant ainsi de faire face aux
+premières difficultés financières d'une publication très coûteuse; —
+enfin aux auteurs de comptes rendus, dont la critique bienveillante
+m'a encouragé en appréciant favorablement la valeur scientifique du
+Dictionnaire Liégeois (*).
+J.H.
+Liège, janvier 1933.
+(*)On peutvoir, dansles Enquêtesdu Musée dela Vie Wallonne,t. 2, pp. 370-874,
+desextraitsdequelques-unsde ces comptesrendus. — Voiraussil'opinionde J.Jud,
+dans Romania, avril 1932, p. 291.

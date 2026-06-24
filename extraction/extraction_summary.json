@@ -1,0 +1,742 @@
+[
+  {
+    "filename": "tome3-01.pdf",
+    "source_page": "francais-liegeois",
+    "label": "Premières pages",
+    "type": "native_text_plumber",
+    "total_chars": 1638,
+    "num_pages": 6,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-01.txt"
+  },
+  {
+    "filename": "tome3-02.pdf",
+    "source_page": "francais-liegeois",
+    "label": "Avant-propos",
+    "type": "native_text_plumber",
+    "total_chars": 1551,
+    "num_pages": 1,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-02.txt"
+  },
+  {
+    "filename": "tome3-03.pdf",
+    "source_page": "francais-liegeois",
+    "label": "Introduction",
+    "type": "native_text_plumber",
+    "total_chars": 56986,
+    "num_pages": 19,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-03.txt"
+  },
+  {
+    "filename": "tome3-04.pdf",
+    "source_page": "francais-liegeois",
+    "label": "Bibliographie - Localisations",
+    "type": "native_text_plumber",
+    "total_chars": 1587,
+    "num_pages": 1,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-04.txt"
+  },
+  {
+    "filename": "tome3-05.pdf",
+    "source_page": "francais-liegeois",
+    "label": "Principales abréviations",
+    "type": "native_text_plumber",
+    "total_chars": 2377,
+    "num_pages": 1,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-05.txt"
+  },
+  {
+    "filename": "tome3-06.pdf",
+    "source_page": "francais-liegeois",
+    "label": "A",
+    "type": "native_text_plumber",
+    "total_chars": 145814,
+    "num_pages": 36,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-06.txt"
+  },
+  {
+    "filename": "tome3-07.pdf",
+    "source_page": "francais-liegeois",
+    "label": "B",
+    "type": "native_text_plumber",
+    "total_chars": 145097,
+    "num_pages": 36,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-07.txt"
+  },
+  {
+    "filename": "tome3-08.pdf",
+    "source_page": "francais-liegeois",
+    "label": "C",
+    "type": "native_text_plumber",
+    "total_chars": 243353,
+    "num_pages": 60,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-08.txt"
+  },
+  {
+    "filename": "tome3-09.pdf",
+    "source_page": "francais-liegeois",
+    "label": "D",
+    "type": "native_text_plumber",
+    "total_chars": 125087,
+    "num_pages": 30,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-09.txt"
+  },
+  {
+    "filename": "tome3-10.pdf",
+    "source_page": "francais-liegeois",
+    "label": "E",
+    "type": "native_text_plumber",
+    "total_chars": 175592,
+    "num_pages": 43,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-10.txt"
+  },
+  {
+    "filename": "tome3-11.pdf",
+    "source_page": "francais-liegeois",
+    "label": "F",
+    "type": "native_text_plumber",
+    "total_chars": 125491,
+    "num_pages": 31,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-11.txt"
+  },
+  {
+    "filename": "tome3-12.pdf",
+    "source_page": "francais-liegeois",
+    "label": "G",
+    "type": "native_text_plumber",
+    "total_chars": 76152,
+    "num_pages": 19,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-12.txt"
+  },
+  {
+    "filename": "tome3-13.pdf",
+    "source_page": "francais-liegeois",
+    "label": "H",
+    "type": "native_text_plumber",
+    "total_chars": 44674,
+    "num_pages": 12,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-13.txt"
+  },
+  {
+    "filename": "tome3-14.pdf",
+    "source_page": "francais-liegeois",
+    "label": "I",
+    "type": "native_text_plumber",
+    "total_chars": 38164,
+    "num_pages": 10,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-14.txt"
+  },
+  {
+    "filename": "tome3-15.pdf",
+    "source_page": "francais-liegeois",
+    "label": "J",
+    "type": "native_text_plumber",
+    "total_chars": 23377,
+    "num_pages": 6,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-15.txt"
+  },
+  {
+    "filename": "tome3-16.pdf",
+    "source_page": "francais-liegeois",
+    "label": "K",
+    "type": "native_text_plumber",
+    "total_chars": 3593,
+    "num_pages": 1,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-16.txt"
+  },
+  {
+    "filename": "tome3-17.pdf",
+    "source_page": "francais-liegeois",
+    "label": "L",
+    "type": "native_text_plumber",
+    "total_chars": 59931,
+    "num_pages": 15,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-17.txt"
+  },
+  {
+    "filename": "tome3-18.pdf",
+    "source_page": "francais-liegeois",
+    "label": "M",
+    "type": "native_text_plumber",
+    "total_chars": 117045,
+    "num_pages": 30,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-18.txt"
+  },
+  {
+    "filename": "tome3-19.pdf",
+    "source_page": "francais-liegeois",
+    "label": "N",
+    "type": "native_text_plumber",
+    "total_chars": 35610,
+    "num_pages": 9,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-19.txt"
+  },
+  {
+    "filename": "tome3-20.pdf",
+    "source_page": "francais-liegeois",
+    "label": "O",
+    "type": "native_text_plumber",
+    "total_chars": 35658,
+    "num_pages": 9,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-20.txt"
+  },
+  {
+    "filename": "tome3-21.pdf",
+    "source_page": "francais-liegeois",
+    "label": "P",
+    "type": "native_text_plumber",
+    "total_chars": 188914,
+    "num_pages": 47,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-21.txt"
+  },
+  {
+    "filename": "tome3-22.pdf",
+    "source_page": "francais-liegeois",
+    "label": "Q",
+    "type": "native_text_plumber",
+    "total_chars": 20204,
+    "num_pages": 5,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-22.txt"
+  },
+  {
+    "filename": "tome3-23.pdf",
+    "source_page": "francais-liegeois",
+    "label": "R",
+    "type": "native_text_plumber",
+    "total_chars": 134191,
+    "num_pages": 33,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-23.txt"
+  },
+  {
+    "filename": "tome3-24.pdf",
+    "source_page": "francais-liegeois",
+    "label": "S",
+    "type": "native_text_plumber",
+    "total_chars": 99445,
+    "num_pages": 25,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-24.txt"
+  },
+  {
+    "filename": "tome3-25.pdf",
+    "source_page": "francais-liegeois",
+    "label": "T",
+    "type": "native_text_plumber",
+    "total_chars": 105732,
+    "num_pages": 26,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-25.txt"
+  },
+  {
+    "filename": "tome3-26.pdf",
+    "source_page": "francais-liegeois",
+    "label": "U",
+    "type": "native_text_plumber",
+    "total_chars": 7328,
+    "num_pages": 2,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-26.txt"
+  },
+  {
+    "filename": "tome3-27.pdf",
+    "source_page": "francais-liegeois",
+    "label": "V",
+    "type": "native_text_plumber",
+    "total_chars": 59966,
+    "num_pages": 15,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-27.txt"
+  },
+  {
+    "filename": "tome3-28.pdf",
+    "source_page": "francais-liegeois",
+    "label": "W",
+    "type": "native_text_plumber",
+    "total_chars": 3238,
+    "num_pages": 1,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-28.txt"
+  },
+  {
+    "filename": "tome3-29.pdf",
+    "source_page": "francais-liegeois",
+    "label": "X",
+    "type": "native_text_plumber",
+    "total_chars": 2646,
+    "num_pages": 1,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-29.txt"
+  },
+  {
+    "filename": "tome3-30.pdf",
+    "source_page": "francais-liegeois",
+    "label": "Y",
+    "type": "native_text_plumber",
+    "total_chars": 2646,
+    "num_pages": 1,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-30.txt"
+  },
+  {
+    "filename": "tome3-31.pdf",
+    "source_page": "francais-liegeois",
+    "label": "Z",
+    "type": "native_text_plumber",
+    "total_chars": 5966,
+    "num_pages": 2,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-31.txt"
+  },
+  {
+    "filename": "tome3-32.pdf",
+    "source_page": "francais-liegeois",
+    "label": "Corrections du dictionnaire liégeois",
+    "type": "native_text_plumber",
+    "total_chars": 54865,
+    "num_pages": 14,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-32.txt"
+  },
+  {
+    "filename": "tome3-33.pdf",
+    "source_page": "francais-liegeois",
+    "label": "Additions et corrections",
+    "type": "native_text_plumber",
+    "total_chars": 7926,
+    "num_pages": 3,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-33.txt"
+  },
+  {
+    "filename": "tome3-34.pdf",
+    "source_page": "francais-liegeois",
+    "label": "Table systématique des illustrations",
+    "type": "native_text_plumber",
+    "total_chars": 23788,
+    "num_pages": 6,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-34.txt"
+  },
+  {
+    "filename": "tome3-35.pdf",
+    "source_page": "francais-liegeois",
+    "label": "Index des sources des illustrations",
+    "type": "native_text_plumber",
+    "total_chars": 1109,
+    "num_pages": 1,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-35.txt"
+  },
+  {
+    "filename": "tome3-36.pdf",
+    "source_page": "francais-liegeois",
+    "label": "Table des matières",
+    "type": "native_text_plumber",
+    "total_chars": 602,
+    "num_pages": 1,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-36.txt"
+  },
+  {
+    "filename": "tome3-37.pdf",
+    "source_page": "francais-liegeois",
+    "label": "Région du dialecte liégeois",
+    "type": "native_text_plumber",
+    "total_chars": 2165,
+    "num_pages": 2,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome3-37.txt"
+  },
+  {
+    "filename": "tome2-01.pdf",
+    "source_page": "liegeois",
+    "label": "Premières pages",
+    "type": "native_text_plumber",
+    "total_chars": 3030,
+    "num_pages": 8,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-01.txt"
+  },
+  {
+    "filename": "tome2-02.pdf",
+    "source_page": "liegeois",
+    "label": "Avant-propos (1990)",
+    "type": "native_text_plumber",
+    "total_chars": 12245,
+    "num_pages": 4,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-02.txt"
+  },
+  {
+    "filename": "tome2-03.pdf",
+    "source_page": "liegeois",
+    "label": "Introduction",
+    "type": "native_text_plumber",
+    "total_chars": 7670,
+    "num_pages": 3,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-03.txt"
+  },
+  {
+    "filename": "tome2-04.pdf",
+    "source_page": "liegeois",
+    "label": "Le dialecte liégeois",
+    "type": "native_text_plumber",
+    "total_chars": 60580,
+    "num_pages": 18,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-04.txt"
+  },
+  {
+    "filename": "tome2-05.pdf",
+    "source_page": "liegeois",
+    "label": "Bibliographie",
+    "type": "native_text_plumber",
+    "total_chars": 3943,
+    "num_pages": 1,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-05.txt"
+  },
+  {
+    "filename": "tome2-06.pdf",
+    "source_page": "liegeois",
+    "label": "Abréviations",
+    "type": "native_text_plumber",
+    "total_chars": 2372,
+    "num_pages": 1,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-06.txt"
+  },
+  {
+    "filename": "tome2-07.pdf",
+    "source_page": "liegeois",
+    "label": "A",
+    "type": "native_text_plumber",
+    "total_chars": 213675,
+    "num_pages": 53,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-07.txt"
+  },
+  {
+    "filename": "tome2-08.pdf",
+    "source_page": "liegeois",
+    "label": "B",
+    "type": "native_text_plumber",
+    "total_chars": 276092,
+    "num_pages": 72,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-08.txt"
+  },
+  {
+    "filename": "tome2-09.pdf",
+    "source_page": "liegeois",
+    "label": "C",
+    "type": "native_text_plumber",
+    "total_chars": 269752,
+    "num_pages": 70,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-09.txt"
+  },
+  {
+    "filename": "tome2-10.pdf",
+    "source_page": "liegeois",
+    "label": "D",
+    "type": "native_text_plumber",
+    "total_chars": 203594,
+    "num_pages": 47,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-10.txt"
+  },
+  {
+    "filename": "tome2-11.pdf",
+    "source_page": "liegeois",
+    "label": "E",
+    "type": "native_text_plumber",
+    "total_chars": 82610,
+    "num_pages": 20,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-11.txt"
+  },
+  {
+    "filename": "tome2-12.pdf",
+    "source_page": "liegeois",
+    "label": "F",
+    "type": "native_text_plumber",
+    "total_chars": 98782,
+    "num_pages": 27,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-12.txt"
+  },
+  {
+    "filename": "tome2-13.pdf",
+    "source_page": "liegeois",
+    "label": "G",
+    "type": "native_text_plumber",
+    "total_chars": 73266,
+    "num_pages": 18,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-13.txt"
+  },
+  {
+    "filename": "tome2-14.pdf",
+    "source_page": "liegeois",
+    "label": "H",
+    "type": "native_text_plumber",
+    "total_chars": 147182,
+    "num_pages": 39,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-14.txt"
+  },
+  {
+    "filename": "tome2-15.pdf",
+    "source_page": "liegeois",
+    "label": "I",
+    "type": "native_text_plumber",
+    "total_chars": 23201,
+    "num_pages": 6,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-15.txt"
+  },
+  {
+    "filename": "tome2-16.pdf",
+    "source_page": "liegeois",
+    "label": "J",
+    "type": "native_text_plumber",
+    "total_chars": 5460,
+    "num_pages": 2,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-16.txt"
+  },
+  {
+    "filename": "tome2-17.pdf",
+    "source_page": "liegeois",
+    "label": "K",
+    "type": "native_text_plumber",
+    "total_chars": 54598,
+    "num_pages": 13,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-17.txt"
+  },
+  {
+    "filename": "tome2-18.pdf",
+    "source_page": "liegeois",
+    "label": "L",
+    "type": "native_text_plumber",
+    "total_chars": 86515,
+    "num_pages": 22,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-18.txt"
+  },
+  {
+    "filename": "tome2-19.pdf",
+    "source_page": "liegeois",
+    "label": "M",
+    "type": "native_text_plumber",
+    "total_chars": 168712,
+    "num_pages": 46,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-19.txt"
+  },
+  {
+    "filename": "tome2-20.pdf",
+    "source_page": "liegeois",
+    "label": "N",
+    "type": "native_text_plumber",
+    "total_chars": 48655,
+    "num_pages": 13,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-20.txt"
+  },
+  {
+    "filename": "tome2-21.pdf",
+    "source_page": "liegeois",
+    "label": "O",
+    "type": "native_text_plumber",
+    "total_chars": 53028,
+    "num_pages": 14,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-21.txt"
+  },
+  {
+    "filename": "tome2-22.pdf",
+    "source_page": "liegeois",
+    "label": "P",
+    "type": "native_text_plumber",
+    "total_chars": 254666,
+    "num_pages": 67,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-22.txt"
+  },
+  {
+    "filename": "tome2-23.pdf",
+    "source_page": "liegeois",
+    "label": "Q",
+    "type": "native_text_plumber",
+    "total_chars": 3396,
+    "num_pages": 1,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-23.txt"
+  },
+  {
+    "filename": "tome2-24.pdf",
+    "source_page": "liegeois",
+    "label": "R",
+    "type": "native_text_plumber",
+    "total_chars": 234336,
+    "num_pages": 58,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-24.txt"
+  },
+  {
+    "filename": "tome2-25.pdf",
+    "source_page": "liegeois",
+    "label": "S",
+    "type": "native_text_plumber",
+    "total_chars": 194383,
+    "num_pages": 52,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-25.txt"
+  },
+  {
+    "filename": "tome2-26.pdf",
+    "source_page": "liegeois",
+    "label": "T",
+    "type": "native_text_plumber",
+    "total_chars": 225644,
+    "num_pages": 60,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-26.txt"
+  },
+  {
+    "filename": "tome2-27.pdf",
+    "source_page": "liegeois",
+    "label": "U",
+    "type": "native_text_plumber",
+    "total_chars": 7048,
+    "num_pages": 2,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-27.txt"
+  },
+  {
+    "filename": "tome2-28.pdf",
+    "source_page": "liegeois",
+    "label": "V",
+    "type": "native_text_plumber",
+    "total_chars": 78594,
+    "num_pages": 19,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-28.txt"
+  },
+  {
+    "filename": "tome2-29.pdf",
+    "source_page": "liegeois",
+    "label": "W",
+    "type": "native_text_plumber",
+    "total_chars": 39382,
+    "num_pages": 10,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-29.txt"
+  },
+  {
+    "filename": "tome2-30.pdf",
+    "source_page": "liegeois",
+    "label": "Y",
+    "type": "native_text_plumber",
+    "total_chars": 3327,
+    "num_pages": 1,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-30.txt"
+  },
+  {
+    "filename": "tome2-31.pdf",
+    "source_page": "liegeois",
+    "label": "Z",
+    "type": "native_text_plumber",
+    "total_chars": 11241,
+    "num_pages": 3,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-31.txt"
+  },
+  {
+    "filename": "tome2-32.pdf",
+    "source_page": "liegeois",
+    "label": "Additions et corrections",
+    "type": "native_text_plumber",
+    "total_chars": 43760,
+    "num_pages": 11,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-32.txt"
+  },
+  {
+    "filename": "tome2-33.pdf",
+    "source_page": "liegeois",
+    "label": "Index étymologique",
+    "type": "native_text_plumber",
+    "total_chars": 23904,
+    "num_pages": 5,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-33.txt"
+  },
+  {
+    "filename": "tome2-34.pdf",
+    "source_page": "liegeois",
+    "label": "Table systématique des illustrations",
+    "type": "native_text_plumber",
+    "total_chars": 18043,
+    "num_pages": 5,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-34.txt"
+  },
+  {
+    "filename": "tome2-35.pdf",
+    "source_page": "liegeois",
+    "label": "Index des sources des illustrations",
+    "type": "native_text_plumber",
+    "total_chars": 4811,
+    "num_pages": 2,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-35.txt"
+  },
+  {
+    "filename": "tome2-36.pdf",
+    "source_page": "liegeois",
+    "label": "Dernières additions",
+    "type": "native_text_plumber",
+    "total_chars": 2152,
+    "num_pages": 1,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-36.txt"
+  },
+  {
+    "filename": "tome2-37.pdf",
+    "source_page": "liegeois",
+    "label": "Table des matières",
+    "type": "native_text_plumber",
+    "total_chars": 707,
+    "num_pages": 1,
+    "success": true,
+    "text_file": "C:\\Users\\TrendingPC\\.gemini\\antigravity\\scratch\\liptimotiwalon\\extraction\\texts\\tome2-37.txt"
+  }
+]

@@ -1,0 +1,6 @@
+﻿# Fichiers sources PDF (trop lourds pour GitHub)
+extraction/pdfs/
+
+# Fichiers de backup
+dico_backup_old.json
+dico_pre_clean.json
