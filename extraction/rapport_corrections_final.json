@@ -1,0 +1,834 @@
+{
+  "corrections_word": 3,
+  "corrections_definition": 71,
+  "total": 74,
+  "details_word": [
+    {
+      "original": "l'adje",
+      "corrected": "l'ådje",
+      "changes": [
+        [
+          "adje",
+          "ådje"
+        ]
+      ],
+      "tome": 2,
+      "page": 14
+    },
+    {
+      "original": "ménopause l'adje critique",
+      "corrected": "ménopause l'ådje critique",
+      "changes": [
+        [
+          "adje",
+          "ådje"
+        ]
+      ],
+      "tome": 3,
+      "page": 18
+    },
+    {
+      "original": "virilité fwèce di l'adje",
+      "corrected": "virilité fwèce di l'ådje",
+      "changes": [
+        [
+          "adje",
+          "ådje"
+        ]
+      ],
+      "tome": 3,
+      "page": 27
+    }
+  ],
+  "details_def": [
+    {
+      "word": "agoleèm'hanèle",
+      "changes": [
+        [
+          "agrafa",
+          "ågrafå"
+        ]
+      ],
+      "tome": 2,
+      "page": 16
+    },
+    {
+      "word": "Agrippa",
+      "changes": [
+        [
+          "agrafa",
+          "ågrafå"
+        ]
+      ],
+      "tome": 3,
+      "page": 6
+    },
+    {
+      "word": "Aliguilite",
+      "changes": [
+        [
+          "alon",
+          "ålon"
+        ]
+      ],
+      "tome": 2,
+      "page": 21
+    },
+    {
+      "word": "ameublement",
+      "changes": [
+        [
+          "amonne",
+          "åmonne"
+        ]
+      ],
+      "tome": 2,
+      "page": 24
+    },
+    {
+      "word": "Andrimontlez Verviers",
+      "changes": [
+        [
+          "abalowe",
+          "åbalowe"
+        ]
+      ],
+      "tome": 2,
+      "page": 62
+    },
+    {
+      "word": "archal",
+      "changes": [
+        [
+          "arca",
+          "årca"
+        ]
+      ],
+      "tome": 3,
+      "page": 6
+    },
+    {
+      "word": "avizé",
+      "changes": [
+        [
+          "avrûle",
+          "åvrûle"
+        ]
+      ],
+      "tome": 2,
+      "page": 3
+    },
+    {
+      "word": "bala",
+      "changes": [
+        [
+          "atche",
+          "åtche"
+        ]
+      ],
+      "tome": 3,
+      "page": 11
+    },
+    {
+      "word": "bâhî",
+      "changes": [
+        [
+          "adje",
+          "ådje"
+        ],
+        [
+          "are",
+          "åre"
+        ]
+      ],
+      "tome": 2,
+      "page": 33
+    },
+    {
+      "word": "bêle av'nowe",
+      "changes": [
+        [
+          "alon",
+          "ålon"
+        ]
+      ],
+      "tome": 3,
+      "page": 6
+    },
+    {
+      "word": "bler",
+      "changes": [
+        [
+          "abon",
+          "åbon"
+        ]
+      ],
+      "tome": 2,
+      "page": 58
+    },
+    {
+      "word": "bois supportant le fer de meule",
+      "changes": [
+        [
+          "armé",
+          "årmé"
+        ]
+      ],
+      "tome": 2,
+      "page": 69
+    },
+    {
+      "word": "brage",
+      "changes": [
+        [
+          "ame",
+          "åme"
+        ]
+      ],
+      "tome": 2,
+      "page": 4
+    },
+    {
+      "word": "commun",
+      "changes": [
+        [
+          "abricot",
+          "åbricot"
+        ]
+      ],
+      "tome": 2,
+      "page": 13
+    },
+    {
+      "word": "cori",
+      "changes": [
+        [
+          "alon",
+          "ålon"
+        ]
+      ],
+      "tome": 2,
+      "page": 26
+    },
+    {
+      "word": "criaillerie",
+      "changes": [
+        [
+          "abalowe",
+          "åbalowe"
+        ],
+        [
+          "aye",
+          "åye"
+        ]
+      ],
+      "tome": 2,
+      "page": 62
+    },
+    {
+      "word": "d'escalier",
+      "changes": [
+        [
+          "adje",
+          "ådje"
+        ]
+      ],
+      "tome": 2,
+      "page": 19
+    },
+    {
+      "word": "d'un ivrogne qui fait des zigzags",
+      "changes": [
+        [
+          "artificiel",
+          "årtificiel"
+        ]
+      ],
+      "tome": 2,
+      "page": 50
+    },
+    {
+      "word": "de liqueur",
+      "changes": [
+        [
+          "ame",
+          "åme"
+        ]
+      ],
+      "tome": 2,
+      "page": 23
+    },
+    {
+      "word": "de politesse",
+      "changes": [
+        [
+          "adje",
+          "ådje"
+        ]
+      ],
+      "tome": 2,
+      "page": 10
+    },
+    {
+      "word": "dès-àlons",
+      "changes": [
+        [
+          "aye",
+          "åye"
+        ]
+      ],
+      "tome": 2,
+      "page": 53
+    },
+    {
+      "word": "dètes",
+      "changes": [
+        [
+          "awe",
+          "åwe"
+        ]
+      ],
+      "tome": 3,
+      "page": 10
+    },
+    {
+      "word": "dicorèdje",
+      "changes": [
+        [
+          "armon",
+          "årmon"
+        ]
+      ],
+      "tome": 2,
+      "page": 37
+    },
+    {
+      "word": "difficulté",
+      "changes": [
+        [
+          "agne",
+          "ågne"
+        ]
+      ],
+      "tome": 3,
+      "page": 9
+    },
+    {
+      "word": "dj'èls-aabouché toslès deûs",
+      "changes": [
+        [
+          "abricot",
+          "åbricot"
+        ]
+      ],
+      "tome": 2,
+      "page": 5
+    },
+    {
+      "word": "donnier",
+      "changes": [
+        [
+          "aye",
+          "åye"
+        ]
+      ],
+      "tome": 2,
+      "page": 69
+    },
+    {
+      "word": "espèce de manche",
+      "changes": [
+        [
+          "adje",
+          "ådje"
+        ]
+      ],
+      "tome": 2,
+      "page": 6
+    },
+    {
+      "word": "écorne (enclume)",
+      "changes": [
+        [
+          "aye",
+          "åye"
+        ]
+      ],
+      "tome": 2,
+      "page": 10
+    },
+    {
+      "word": "êtreattaché",
+      "changes": [
+        [
+          "adje",
+          "ådje"
+        ]
+      ],
+      "tome": 2,
+      "page": 37
+    },
+    {
+      "word": "faire unarticle",
+      "changes": [
+        [
+          "abalowe",
+          "åbalowe"
+        ]
+      ],
+      "tome": 2,
+      "page": 3
+    },
+    {
+      "word": "frûl'",
+      "changes": [
+        [
+          "are",
+          "åre"
+        ]
+      ],
+      "tome": 2,
+      "page": 11
+    },
+    {
+      "word": "Hesbain",
+      "changes": [
+        [
+          "aye",
+          "åye"
+        ]
+      ],
+      "tome": 2,
+      "page": 19
+    },
+    {
+      "word": "hoûveûre nin",
+      "changes": [
+        [
+          "aye",
+          "åye"
+        ]
+      ],
+      "tome": 2,
+      "page": 17
+    },
+    {
+      "word": "ine pilile avinêye bàcèle",
+      "changes": [
+        [
+          "adje",
+          "ådje"
+        ]
+      ],
+      "tome": 2,
+      "page": 50
+    },
+    {
+      "word": "jôler",
+      "changes": [
+        [
+          "amen",
+          "åmen"
+        ]
+      ],
+      "tome": 2,
+      "page": 23
+    },
+    {
+      "word": "lèye po marquer lès pans (voy. lèye)",
+      "changes": [
+        [
+          "adje",
+          "ådje"
+        ]
+      ],
+      "tome": 2,
+      "page": 60
+    },
+    {
+      "word": "lignesnesontpas bienparaUèles",
+      "changes": [
+        [
+          "ame",
+          "åme"
+        ]
+      ],
+      "tome": 2,
+      "page": 10
+    },
+    {
+      "word": "madame",
+      "changes": [
+        [
+          "atoû",
+          "åtoû"
+        ]
+      ],
+      "tome": 3,
+      "page": 6
+    },
+    {
+      "word": "marlou",
+      "changes": [
+        [
+          "aye",
+          "åye"
+        ]
+      ],
+      "tome": 2,
+      "page": 17
+    },
+    {
+      "word": "midj'và",
+      "changes": [
+        [
+          "armé",
+          "årmé"
+        ]
+      ],
+      "tome": 2,
+      "page": 48
+    },
+    {
+      "word": "mon âge",
+      "changes": [
+        [
+          "adje",
+          "ådje"
+        ]
+      ],
+      "tome": 2,
+      "page": 11
+    },
+    {
+      "word": "motsuivant",
+      "changes": [
+        [
+          "are",
+          "åre"
+        ]
+      ],
+      "tome": 2,
+      "page": 19
+    },
+    {
+      "word": "Namur",
+      "changes": [
+        [
+          "adje",
+          "ådje"
+        ]
+      ],
+      "tome": 2,
+      "page": 6
+    },
+    {
+      "word": "on lî f'rè clore si badjawe",
+      "changes": [
+        [
+          "are",
+          "åre"
+        ]
+      ],
+      "tome": 3,
+      "page": 8
+    },
+    {
+      "word": "ou apposé au sujet",
+      "changes": [
+        [
+          "adje",
+          "ådje"
+        ]
+      ],
+      "tome": 2,
+      "page": 17
+    },
+    {
+      "word": "oudebébé",
+      "changes": [
+        [
+          "awe",
+          "åwe"
+        ]
+      ],
+      "tome": 2,
+      "page": 5
+    },
+    {
+      "word": "plêzîr",
+      "changes": [
+        [
+          "aye",
+          "åye"
+        ]
+      ],
+      "tome": 3,
+      "page": 6
+    },
+    {
+      "word": "pte",
+      "changes": [
+        [
+          "adje",
+          "ådje"
+        ]
+      ],
+      "tome": 2,
+      "page": 12
+    },
+    {
+      "word": "qui lu",
+      "changes": [
+        [
+          "adje",
+          "ådje"
+        ]
+      ],
+      "tome": 2,
+      "page": 9
+    },
+    {
+      "word": "requise",
+      "changes": [
+        [
+          "are",
+          "åre"
+        ]
+      ],
+      "tome": 2,
+      "page": 36
+    },
+    {
+      "word": "retour",
+      "changes": [
+        [
+          "adje",
+          "ådje"
+        ]
+      ],
+      "tome": 2,
+      "page": 46
+    },
+    {
+      "word": "rêzon",
+      "changes": [
+        [
+          "adje",
+          "ådje"
+        ]
+      ],
+      "tome": 2,
+      "page": 11
+    },
+    {
+      "word": "rience nécessaire",
+      "changes": [
+        [
+          "adje",
+          "ådje"
+        ]
+      ],
+      "tome": 2,
+      "page": 11
+    },
+    {
+      "word": "s' leçon",
+      "changes": [
+        [
+          "abon",
+          "åbon"
+        ]
+      ],
+      "tome": 2,
+      "page": 24
+    },
+    {
+      "word": "sans doute du suivant",
+      "changes": [
+        [
+          "abalowe",
+          "åbalowe"
+        ]
+      ],
+      "tome": 2,
+      "page": 7
+    },
+    {
+      "word": "ses tartines",
+      "changes": [
+        [
+          "adje",
+          "ådje"
+        ]
+      ],
+      "tome": 2,
+      "page": 9
+    },
+    {
+      "word": "sillontracépourlabourer",
+      "changes": [
+        [
+          "arsenal",
+          "årsenål"
+        ]
+      ],
+      "tome": 2,
+      "page": 38
+    },
+    {
+      "word": "solide",
+      "changes": [
+        [
+          "adje",
+          "ådje"
+        ]
+      ],
+      "tome": 2,
+      "page": 25
+    },
+    {
+      "word": "solif'gnèsse",
+      "changes": [
+        [
+          "adje",
+          "ådje"
+        ]
+      ],
+      "tome": 2,
+      "page": 30
+    },
+    {
+      "word": "spindje (arch",
+      "changes": [
+        [
+          "adje",
+          "ådje"
+        ]
+      ],
+      "tome": 2,
+      "page": 39
+    },
+    {
+      "word": "suif",
+      "changes": [
+        [
+          "arma",
+          "årmå"
+        ]
+      ],
+      "tome": 2,
+      "page": 18
+    },
+    {
+      "word": "tage",
+      "changes": [
+        [
+          "arsin",
+          "årsin"
+        ]
+      ],
+      "tome": 2,
+      "page": 38
+    },
+    {
+      "word": "tcholeûr",
+      "changes": [
+        [
+          "adje",
+          "ådje"
+        ]
+      ],
+      "tome": 2,
+      "page": 21
+    },
+    {
+      "word": "tentieuse",
+      "changes": [
+        [
+          "armé",
+          "årmé"
+        ]
+      ],
+      "tome": 2,
+      "page": 3
+    },
+    {
+      "word": "tile",
+      "changes": [
+        [
+          "abon",
+          "åbon"
+        ]
+      ],
+      "tome": 2,
+      "page": 5
+    },
+    {
+      "word": "tourner so Y cwér de qn",
+      "changes": [
+        [
+          "are",
+          "åre"
+        ]
+      ],
+      "tome": 3,
+      "page": 14
+    },
+    {
+      "word": "transport",
+      "changes": [
+        [
+          "arcade",
+          "årcåde"
+        ]
+      ],
+      "tome": 2,
+      "page": 34
+    },
+    {
+      "word": "un autre nom (sàrol Darion",
+      "changes": [
+        [
+          "aye",
+          "åye"
+        ]
+      ],
+      "tome": 2,
+      "page": 6
+    },
+    {
+      "word": "verser tout",
+      "changes": [
+        [
+          "abon",
+          "åbon"
+        ]
+      ],
+      "tome": 2,
+      "page": 27
+    },
+    {
+      "word": "vra",
+      "changes": [
+        [
+          "ame",
+          "åme"
+        ]
+      ],
+      "tome": 2,
+      "page": 39
+    },
+    {
+      "word": "vrêge",
+      "changes": [
+        [
+          "are",
+          "åre"
+        ]
+      ],
+      "tome": 3,
+      "page": 27
+    }
+  ]
+}
