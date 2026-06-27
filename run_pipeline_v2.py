@@ -23,6 +23,7 @@ from extract_v2        import extract_columns, col_left_x
 from parse_entries_v2  import parse_column_entries
 from correct_diacritics_v2 import correct_entry
 from validate_dico     import validate, generate_html_report
+from restructure_dico  import restructure_entry
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -151,18 +152,22 @@ def run(test_mode: bool = False):
             unique_entries.append(e)
     print(f"Après dédoublonnage : {len(unique_entries)} entrées")
 
+    # Restructuration des entrées
+    print("Restructuration des entrées...")
+    restructured_entries = [restructure_entry(e) for e in unique_entries]
+
     # Sauvegarde
     suffix = "_test" if test_mode else ""
     out_path = PROJ / f"dico{suffix}.json"
     with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(unique_entries, f, ensure_ascii=False, indent=2)
+        json.dump(restructured_entries, f, ensure_ascii=False, indent=2)
     print(f"Sauvegardé : {out_path}")
     
     # Également sauvegarder au format JS (dico.js) pour support file:// hors ligne
     out_path_js = PROJ / f"dico{suffix}.js"
     with open(out_path_js, "w", encoding="utf-8") as f:
         f.write("window.dictionaryData = ")
-        json.dump(unique_entries, f, ensure_ascii=False)
+        json.dump(restructured_entries, f, ensure_ascii=False)
         f.write(";\n")
     print(f"Sauvegardé format JS : {out_path_js}")
 

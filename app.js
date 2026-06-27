@@ -53,33 +53,16 @@ function removeAccents(str) {
 }
 
 // Extract Main Translation for display next to the headword
-function extractMainTranslation(definition, type) {
-  if (!definition) return '';
-  
-  let cleanDef = definition.trim();
-  
-  // Replace tildes representing the headword
-  cleanDef = cleanDef.replace(/~/g, '');
-  
-  if (type === 'wallon-francais') {
-    // Tome 2: Wallon -> Français. Strip grammatical prefixes
-    cleanDef = cleanDef.replace(/^(m\.|f\.|î\.|v\.\s*tr\.|v\.\s*intr\.|v\.\s*rêfl\.|v\.\s*imp\.|v\.|adj\.|adv\.|prép\.|conj\.|interj\.|loc\.|n\.pr\.|pron\.|num\.|art\.|part\.|suff\.|préf\.)\s*,?\s*/i, '');
-    
-    // Remove all parenthetical/bracket remarks to avoid issues with punctuation inside them
-    let textNoParens = cleanDef.replace(/\([^)]*\)/g, '').replace(/\[[^\]]*\]/g, '').trim();
-    
-    // Split by ';' or ':' or ',' or '.' to get first translation
-    let match = textNoParens.split(/[:;,.]/)[0].trim();
-    return match || '...';
-  } else {
-    // Tome 3: Français -> Wallon.
-    // Remove all parenthetical/bracket remarks to avoid issues with punctuation inside them
-    let textNoParens = cleanDef.replace(/\([^)]*\)/g, '').replace(/\[[^\]]*\]/g, '').trim();
-    
-    // Split by ';' or ':' or ',' to get the first translation
-    let match = textNoParens.split(/[:;,]/)[0].trim();
-    return match || '...';
+function extractMainTranslation(entry) {
+  if (!entry) return '';
+  if (entry.definitions && entry.definitions.length > 0) {
+    return entry.definitions[0];
   }
+  // Fallback
+  if (entry.definition) {
+    return entry.definition.split(/[:;,.]/)[0].trim();
+  }
+  return '';
 }
 
 // LCG Pseudo-Random Generator (seeded by date for consistent daily word)
@@ -99,7 +82,7 @@ function getWordOfTheDay(dict) {
 
 // Generate unique key for entries to identify in favorites
 function getEntryKey(entry) {
-  return `${entry.word}_T${entry.tome}_P${entry.page}_${entry.type}`;
+  return `${entry.mot}_T${entry.tome}_P${entry.page}_${entry.type}`;
 }
 
 // Initialize Application
@@ -199,7 +182,7 @@ function renderFavorites() {
     // Distinguish fonts in bookmarks
     label.className = `bookmark-word ${entry.type === 'wallon-francais' ? 'wallon-text' : 'francais-text'}`;
     label.style.fontSize = '0.95rem';
-    label.textContent = entry.word;
+    label.textContent = entry.mot;
     label.addEventListener('click', () => openDetailModal(entry));
     
     const removeBtn = document.createElement('button');
@@ -261,19 +244,19 @@ function setupWordOfTheDay() {
     return;
   }
   
-  const mainTranslation = extractMainTranslation(mot.definition, mot.type);
+  const mainTranslation = extractMainTranslation(mot);
   const transClass = mot.type === 'wallon-francais' ? 'francais-text' : 'wallon-text';
   
   container.innerHTML = `
     <div style="display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.5rem;">
-      <div class="mot-word" id="mot-du-jour-word">${mot.word}</div>
+      <div class="mot-word" id="mot-du-jour-word">${mot.mot}</div>
       <span class="word-translation ${transClass}" id="mot-du-jour-trans" style="cursor: pointer;">— ${mainTranslation}</span>
     </div>
     <div class="badge ${mot.type === 'wallon-francais' ? 'badge-w2f' : 'badge-f2w'}" style="margin-top: 0.25rem; margin-bottom: 0.5rem; display: inline-block;">
       ${mot.type === 'wallon-francais' ? 'Wallon' : 'Français'}
     </div>
     <div class="mot-definition" style="margin-top: 0.25rem;">
-      ${formatDefinitionText(mot.definition, mot.word, mot.type)}
+      ${formatDefinitionText(mot)}
     </div>
   `;
   
@@ -281,56 +264,100 @@ function setupWordOfTheDay() {
   document.getElementById('mot-du-jour-trans').addEventListener('click', () => openDetailModal(mot));
 }
 
-// Parse custom characters and separate French and Wallon visually
-function formatDefinitionText(definition, word, type) {
-  if (!definition) return '';
+// Parse structured dictionary entries into premium HTML
+function formatDefinitionText(entry) {
+  if (!entry) return '';
   
-  // Format the headword inside definitions
-  const headwordHtml = type === 'wallon-francais' 
-    ? `<strong class="wallon-text">${word}</strong>` 
-    : `<strong class="francais-text">${word}</strong>`;
+  let html = '';
   
-  let formatted = definition.replace(/~/g, headwordHtml);
-  
-  // Distinguish French and Wallon:
-  if (type === 'wallon-francais') {
-    // Tome 2: "v. tr., emménager: dj'abague pô a pô..."
-    // We split by ':' to separate French translation from Wallon examples.
-    const colonIndex = formatted.indexOf(':');
-    if (colonIndex !== -1) {
-      const frenchPart = formatted.substring(0, colonIndex + 1);
-      const wallonPart = formatted.substring(colonIndex + 1);
-      formatted = `<span class="french-def-part">${frenchPart}</span><span class="wallon-examples-part">${wallonPart}</span>`;
-    }
-  } else {
-    // Tome 3: Français -> Wallon
-    // We style the main definitions as Wallon text (serif/italic), except metadata in brackets/parens.
-    let defText = formatted;
-    
-    // Strip the main translation from the start of the definition text if present
-    const mainTranslation = extractMainTranslation(definition, type);
-    if (mainTranslation && mainTranslation !== '...') {
-      const rawText = defText.trim();
-      if (rawText.toLowerCase().startsWith(mainTranslation.toLowerCase())) {
-        defText = rawText.substring(mainTranslation.length).trim();
-        // Remove leading comma, semicolon, colon or spaces if left over
-        defText = defText.replace(/^[,\s;.:]+/, '').trim();
-      }
-    }
-    
-    formatted = `<span class="wallon-examples-part">${defText}</span>`;
+  // 1. Grammaire, Genre, Prononciation, Domaines
+  let metaParts = [];
+  if (entry.categorie) {
+    metaParts.push(`<span class="meta-item cat">${entry.categorie}</span>`);
+  }
+  if (entry.genre) {
+    metaParts.push(`<span class="meta-item gen">${entry.genre}</span>`);
+  }
+  if (entry.prononciation) {
+    metaParts.push(`<span class="meta-item pron">[${entry.prononciation}]</span>`);
+  }
+  if (entry.domaines && entry.domaines.length > 0) {
+    entry.domaines.forEach(d => {
+      metaParts.push(`<span class="meta-item dom">${d}</span>`);
+    });
   }
   
-  // Format sub-entries (preceded by '|')
-  formatted = formatted.replace(/\|\s*([^,;:|]+)/g, (match, subWord) => {
-    return `<span class="sub-entry-block"><strong class="wallon-sub-title"><i class="fa-solid fa-share-nodes" style="font-size: 0.8rem; margin-right: 0.4rem; opacity: 0.7;"></i> ${subWord.trim()}</strong></span>`;
-  });
+  if (metaParts.length > 0) {
+    html += `<div class="entry-meta-container">${metaParts.join(' ')}</div>`;
+  }
   
-  // Mute parens and brackets
-  formatted = formatted.replace(/(\([^)]+\))/g, '<span class="muted-parens">$1</span>');
-  formatted = formatted.replace(/(\[[^\]]+\])/g, '<span class="muted-parens">$1</span>');
+  // 2. Définitions
+  if (entry.definitions && entry.definitions.length > 0) {
+    html += `<div class="def-block">`;
+    if (entry.definitions.length === 1) {
+      html += `<p class="def-text">${entry.definitions[0]}</p>`;
+    } else {
+      html += `<ol class="def-list">`;
+      entry.definitions.forEach(d => {
+        html += `<li>${d}</li>`;
+      });
+      html += `</ol>`;
+    }
+    html += `</div>`;
+  }
   
-  return formatted;
+  // 3. Exemples
+  if (entry.exemples && entry.exemples.length > 0) {
+    html += `<div class="exemples-block">`;
+    html += `<h4 class="section-title"><i class="fa-solid fa-quote-left"></i> Exemples</h4>`;
+    html += `<ul class="exemples-list">`;
+    entry.exemples.forEach(ex => {
+      let wal = ex.wallon.replace(/~/g, `<strong class="headword-highlight">${entry.mot}</strong>`);
+      let fra = ex.francais ? `<span class="example-translation">— ${ex.francais}</span>` : '';
+      html += `<li><span class="example-wal">${wal}</span> ${fra}</li>`;
+    });
+    html += `</ul>`;
+    html += `</div>`;
+  }
+  
+  // 4. Expressions
+  if (entry.expressions && entry.expressions.length > 0) {
+    html += `<div class="expressions-block">`;
+    html += `<h4 class="section-title"><i class="fa-solid fa-share-nodes"></i> Expressions</h4>`;
+    html += `<ul class="expressions-list">`;
+    entry.expressions.forEach(expr => {
+      html += `<li><span class="expr-text">${expr}</span></li>`;
+    });
+    html += `</ul>`;
+    html += `</div>`;
+  }
+  
+  // 5. Synonymes
+  if (entry.synonymes && entry.synonymes.length > 0) {
+    html += `<div class="syn-block">`;
+    html += `<span class="label">Synonymes :</span> `;
+    let synLinks = entry.synonymes.map(s => `<span class="ref-link" onclick="window.openWordByName('${s.replace(/'/g, "\\'")}')">${s}</span>`);
+    html += synLinks.join(', ');
+    html += `</div>`;
+  }
+  
+  // 6. Renvois
+  if (entry.renvois && entry.renvois.length > 0) {
+    html += `<div class="renvois-block">`;
+    html += `<span class="label">Voir aussi :</span> `;
+    let renvoiLinks = entry.renvois.map(r => `<span class="ref-link" onclick="window.openWordByName('${r.replace(/'/g, "\\'")}')">${r}</span>`);
+    html += renvoiLinks.join(', ');
+    html += `</div>`;
+  }
+  
+  // 7. Origine / Étymologie
+  if (entry.origine) {
+    html += `<div class="origine-block">`;
+    html += `<span class="label">Étymologie :</span> <span class="origine-text">${entry.origine}</span>`;
+    html += `</div>`;
+  }
+  
+  return html;
 }
 
 // Search Algorithm and Ranking
@@ -346,7 +373,7 @@ function performSearch() {
     if (currentFilter !== 'all') {
       filteredResults = filteredResults.filter(entry => entry.type === currentFilter);
     }
-    filteredResults.sort((a, b) => a.word.localeCompare(b.word));
+    filteredResults.sort((a, b) => a.mot.localeCompare(b.mot));
     resultsLabel.textContent = currentFilter === 'all' ? "Toutes les entrées" : (currentFilter === 'wallon-francais' ? "Entrées Wallon-Français" : "Entrées Français-Wallon");
   } else {
     const scored = [];
@@ -356,8 +383,12 @@ function performSearch() {
       
       if (currentFilter !== 'all' && entry.type !== currentFilter) continue;
       
-      const normWord = removeAccents(entry.word);
-      const normDef = removeAccents(entry.definition);
+      const normWord = removeAccents(entry.mot);
+      const definitionsText = (entry.definitions || []).join(' ');
+      const exemplesText = (entry.exemples || []).map(ex => ex.wallon + ' ' + ex.francais).join(' ');
+      const synonymesText = (entry.synonymes || []).join(' ');
+      const renvoisText = (entry.renvois || []).join(' ');
+      const normDef = removeAccents(`${definitionsText} ${exemplesText} ${synonymesText} ${renvoisText}`);
       
       let score = 0;
       
@@ -378,8 +409,8 @@ function performSearch() {
     
     scored.sort((a, b) => {
       if (b.score !== a.score) return b.score - a.score;
-      if (a.entry.word.length !== b.entry.word.length) return a.entry.word.length - b.entry.word.length;
-      return a.entry.word.localeCompare(b.entry.word);
+      if (a.entry.mot.length !== b.entry.mot.length) return a.entry.mot.length - b.entry.mot.length;
+      return a.entry.mot.localeCompare(b.entry.mot);
     });
     
     filteredResults = scored.map(item => item.entry);
@@ -428,20 +459,20 @@ function renderResults() {
     // Choose font family based on word language
     const wordClass = entry.type === 'wallon-francais' ? 'wallon-text' : 'francais-text';
     
-    const mainTranslation = extractMainTranslation(entry.definition, entry.type);
+    const mainTranslation = extractMainTranslation(entry);
     const transClass = entry.type === 'wallon-francais' ? 'francais-text' : 'wallon-text';
     
     card.innerHTML = `
       <div class="card-top">
         <div style="display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.5rem;">
-          <span class="card-word ${wordClass}">${entry.word}</span>
+          <span class="card-word ${wordClass}">${entry.mot}</span>
           <span class="word-translation ${transClass}">— ${mainTranslation}</span>
         </div>
         <span class="badge ${entry.type === 'wallon-francais' ? 'badge-w2f' : 'badge-f2w'}">
           ${entry.type === 'wallon-francais' ? 'Wallon' : 'Français'}
         </span>
       </div>
-      <p class="card-definition">${formatDefinitionText(entry.definition, entry.word, entry.type)}</p>
+      <p class="card-definition">${formatDefinitionText(entry)}</p>
       <div class="card-footer">
         <div class="card-reference">
           <i class="fa-solid fa-book-open" style="font-size: 0.75rem; opacity: 0.7;"></i> 
@@ -528,6 +559,24 @@ function toggleFavorite(entry) {
 }
 
 // Modal View Details
+// Clickable Renvois / Synonymes Navigation
+window.openWordByName = function(wordName) {
+  if (!wordName) return;
+  const cleanedName = wordName.trim();
+  const match = dictionary.find(e => removeAccents(e.mot) === removeAccents(cleanedName));
+  if (match) {
+    openDetailModal(match);
+  } else {
+    // Si pas trouvé précisément, lancer une recherche sur le mot
+    searchBox.value = cleanedName;
+    clearSearchBtn.style.display = 'block';
+    isExpanded = false;
+    performSearch();
+    closeDetailModal();
+  }
+};
+
+// Modal View Details
 let activeModalEntry = null;
 
 function openDetailModal(entry) {
@@ -535,16 +584,16 @@ function openDetailModal(entry) {
   const key = getEntryKey(entry);
   const isFav = favorites.has(key);
   
-  const mainTranslation = extractMainTranslation(entry.definition, entry.type);
+  const mainTranslation = extractMainTranslation(entry);
   const transClass = entry.type === 'wallon-francais' ? 'francais-text' : 'wallon-text';
   
-  modalWord.innerHTML = `${entry.word} <span class="word-translation ${transClass}">— ${mainTranslation}</span>`;
+  modalWord.innerHTML = `${entry.mot} <span class="word-translation ${transClass}">— ${mainTranslation}</span>`;
   modalWord.className = `modal-word ${entry.type === 'wallon-francais' ? 'wallon-text' : 'francais-text'}`;
   
   modalBadge.textContent = entry.type === 'wallon-francais' ? 'Wallon → Français' : 'Français → Wallon';
   modalBadge.className = `badge ${entry.type === 'wallon-francais' ? 'badge-w2f' : 'badge-f2w'}`;
   
-  modalDefinition.innerHTML = formatDefinitionText(entry.definition, entry.word, entry.type);
+  modalDefinition.innerHTML = formatDefinitionText(entry);
   
   modalRefTome.innerHTML = `<i class="fa-solid fa-book-open"></i> Haust, Dictionnaire ${entry.type === 'wallon-francais' ? 'Liégeois (Tome II)' : 'Français-Liégeois (Tome III)'}`;
   modalRefPage.innerHTML = `<i class="fa-solid fa-file-lines"></i> Page ${entry.page}`;

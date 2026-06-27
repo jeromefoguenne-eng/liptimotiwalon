@@ -904,3 +904,190 @@ footer {
   color: var(--text-muted);
   font-family: var(--font-body);
 }
+
+/* Structured Dictionary Styles */
+.entry-meta-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.meta-item {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: var(--font-title);
+  border: 1px solid transparent;
+}
+
+.meta-item.cat {
+  background-color: #f1f5f9;
+  color: #475569;
+  border-color: #cbd5e1;
+}
+
+.meta-item.gen {
+  background-color: #ecfdf5;
+  color: #047857;
+  border-color: #a7f3d0;
+}
+
+.meta-item.pron {
+  background-color: #f8fafc;
+  color: var(--text-muted);
+  border-color: var(--border-card);
+  font-family: var(--font-body);
+  text-transform: none;
+  font-weight: 500;
+}
+
+.meta-item.dom {
+  background-color: #eff6ff;
+  color: #1d4ed8;
+  border-color: #bfdbfe;
+}
+
+/* Definitions Block */
+.def-block {
+  margin-bottom: 1.5rem;
+}
+
+.def-text {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 0;
+}
+
+.def-list {
+  padding-left: 1.25rem;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+}
+
+.def-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* Exemples & Expressions Blocks */
+.exemples-block, .expressions-block {
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--border-card);
+  padding-top: 1.25rem;
+}
+
+.section-title {
+  font-family: var(--font-title);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.section-title i {
+  color: var(--accent-gold-text);
+  font-size: 0.9rem;
+}
+
+.exemples-list, .expressions-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.exemples-list li, .expressions-list li {
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.exemples-list li::before, .expressions-list li::before {
+  content: "•";
+  color: var(--accent-gold);
+  font-size: 1.1rem;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.example-wal {
+  font-family: var(--font-wallon);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--accent-gold-text);
+}
+
+.headword-highlight {
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+  color: var(--text-primary);
+}
+
+.example-translation {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-left: 0.35rem;
+}
+
+.expr-text {
+  font-family: var(--font-wallon);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--accent-gold-text);
+}
+
+/* Meta info blocks (synonymes, renvois, origines) */
+.syn-block, .renvois-block, .origine-block {
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem;
+}
+
+.syn-block .label, .renvois-block .label, .origine-block .label {
+  font-weight: 700;
+  color: var(--text-primary);
+  font-family: var(--font-title);
+  min-width: 95px;
+}
+
+.origine-text {
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+/* Clickable tags for references */
+.ref-link {
+  color: var(--accent-gold-text);
+  font-family: var(--font-wallon);
+  font-style: italic;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: var(--accent-gold-bg);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid rgba(245, 158, 11, 0.15);
+  font-size: 0.9rem;
+  transition: all var(--transition-fast);
+}
+
+.ref-link:hover {
+  background-color: var(--accent-gold);
+  color: white;
+  border-color: var(--accent-gold);
+  transform: translateY(-1px);
+}
+

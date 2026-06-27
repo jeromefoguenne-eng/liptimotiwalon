@@ -66,8 +66,8 @@ def is_entry_start(line: list[dict], col_x_min: float, tome: int) -> bool:
         return False
 
     # 1. Vérification de l'indentation (marge)
-    # L'entrée commence toujours légèrement indentée vers la droite (entre +3.0 et +18.0 pt)
-    is_indented = (col_x_min + 3.0 <= x0 <= col_x_min + 18.0)
+    # L'entrée commence toujours légèrement indentée vers la droite (entre +6.5 et +18.0 pt)
+    is_indented = (col_x_min + 6.5 <= x0 <= col_x_min + 18.0)
     if not is_indented:
         return False
 
@@ -93,13 +93,13 @@ def is_entry_start(line: list[dict], col_x_min: float, tome: int) -> bool:
         if first_span_italic:
             return True
             
-        # Fallback pour les anomalies de police (ex: caractères Å/A représentés en Romain)
-        if first_char.lower() in 'aàâäå\ufffd':
-            prefix = text[:60]
-            has_grammar = bool(GRAMMAR_MARKERS.search(prefix))
-            has_colon = bool(re.search(r'\s*[:;]', prefix))
-            if has_grammar or has_colon:
-                return True
+        # Fallback pour les anomalies de police (mots-vedettes représentés en Romain au lieu d'Italique)
+        prefix = text[:60]
+        has_grammar = bool(GRAMMAR_MARKERS.search(prefix))
+        has_colon = bool(re.search(r'\s*[:;]', prefix))
+        has_punctuation_marker = bool(re.match(r'^[a-zàâéèêëîïôùûüçœæåÅ\'\-]{1,30}\s*[,;.:]', text, re.I))
+        if has_grammar or has_colon or has_punctuation_marker:
+            return True
                 
     elif tome == 3:
         # Tome 3 (Français-Wallon) : le mot-vedette français commence par du Romain (regular),
@@ -174,6 +174,19 @@ def split_entry_line(line: list[dict], tome: int) -> tuple[str, str, str]:
 
         hw = " ".join(hw_spans).strip().rstrip(',;.: ')
         defn = " ".join(def_spans).strip()
+        
+        # Fallback si le découpage par style a échoué (car le premier span n'était pas italique)
+        if not hw and text_clean:
+            match = re.match(r'^([a-zàâéèêëîïôùûüçœæåÅ\'\-]{1,30})\s*([,;.:])\s*(.+)', text_clean, re.I)
+            if match:
+                hw = match.group(1).strip()
+                defn = match.group(3).strip()
+            else:
+                parts = text_clean.split(maxsplit=1)
+                if parts:
+                    hw = parts[0].rstrip(',;.:')
+                    defn = parts[1] if len(parts) > 1 else ""
+                    
         return hw, "", defn
 
     elif tome == 3:
