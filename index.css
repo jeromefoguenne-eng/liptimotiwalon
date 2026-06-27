@@ -115,7 +115,7 @@ header {
 }
 
 .header-logo {
-  height: 120px;
+  height: 180px;
   width: auto;
   filter: drop-shadow(0 4px 8px rgba(15, 23, 42, 0.08));
 }
@@ -506,6 +506,29 @@ h1 {
   color: var(--text-primary);
 }
 
+/* Word Translation style (displayed next to the headword) */
+.word-translation {
+  font-weight: 700;
+}
+.word-translation.wallon-text {
+  font-family: var(--font-wallon);
+  font-style: italic;
+  color: var(--accent-gold-text);
+}
+.word-translation.francais-text {
+  font-family: var(--font-body);
+  color: var(--text-primary);
+}
+.dico-card .word-translation {
+  font-size: 1.45rem;
+}
+.modal-title-area .word-translation {
+  font-size: 2.2rem;
+}
+#widget-mot-du-jour .word-translation {
+  font-size: 1.9rem;
+}
+
 /* Definition inner parts formatting */
 .french-def-part {
   color: var(--text-secondary);
@@ -869,4 +892,15 @@ h1 {
     align-items: flex-start;
     gap: 0.75rem;
   }
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-card);
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-family: var(--font-body);
 }

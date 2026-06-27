@@ -1,0 +1,160 @@
+{
+  "total": 1580,
+  "needs_review": 28,
+  "a_ring_corrected": 5,
+  "word_empty": 2,
+  "word_too_long": 0,
+  "def_empty": 14,
+  "def_too_short": 76,
+  "def_too_long": 2,
+  "by_tome": {
+    "2": 609,
+    "3": 969
+  },
+  "by_letter": {
+    "b": 1239,
+    "i": 68,
+    "m": 16,
+    "d": 21,
+    "j": 7,
+    "l": 11,
+    "î": 7,
+    "r": 6,
+    "n": 5,
+    "c": 13,
+    "f": 24,
+    "g": 4,
+    "â": 1,
+    "1": 22,
+    "2": 21,
+    "a": 15,
+    "p": 11,
+    "h": 12,
+    "u": 4,
+    "v": 11,
+    "3": 2,
+    "e": 3,
+    "t": 12,
+    "~": 12,
+    "o": 5,
+    "w": 5,
+    "s": 10,
+    "«": 1,
+    "x": 1,
+    "q": 1,
+    "à": 4,
+    "\"": 1,
+    "ç": 3
+  },
+  "quality_pct": 98.9,
+  "issues_sample": [
+    {
+      "type": "def_empty",
+      "word": "incarner, -âeion, -chon, -ation",
+      "tome": 2,
+      "page": 3
+    },
+    {
+      "type": "def_empty",
+      "word": "incorporer",
+      "tome": 2,
+      "page": 3
+    },
+    {
+      "type": "def_empty",
+      "word": "indèpandanee, -ant, -e",
+      "tome": 2,
+      "page": 3
+    },
+    {
+      "type": "def_empty",
+      "word": "infirmerèye. -ier, -ière",
+      "tome": 2,
+      "page": 3
+    },
+    {
+      "type": "def_empty",
+      "word": "inégal, -e, -emint, -ité",
+      "tome": 2,
+      "page": 3
+    },
+    {
+      "type": "word_empty",
+      "tome": 2,
+      "page": 5
+    },
+    {
+      "type": "def_empty",
+      "word": "balèt, ballet",
+      "tome": 2,
+      "page": 6
+    },
+    {
+      "type": "def_empty",
+      "word": "bàpa",
+      "tome": 2,
+      "page": 10
+    },
+    {
+      "type": "def_empty",
+      "word": "bateroûle, bat'-",
+      "tome": 2,
+      "page": 17
+    },
+    {
+      "type": "def_too_long",
+      "word": "bihe, bise",
+      "len": 2394,
+      "tome": 2,
+      "page": 29
+    },
+    {
+      "type": "def_too_long",
+      "word": "bim' bam' boum'",
+      "len": 2328,
+      "tome": 2,
+      "page": 30
+    },
+    {
+      "type": "word_empty",
+      "tome": 2,
+      "page": 70
+    },
+    {
+      "type": "def_empty",
+      "word": "balcon",
+      "tome": 3,
+      "page": 4
+    },
+    {
+      "type": "def_empty",
+      "word": "bas-fond",
+      "tome": 3,
+      "page": 8
+    },
+    {
+      "type": "def_empty",
+      "word": "basson",
+      "tome": 3,
+      "page": 8
+    },
+    {
+      "type": "def_empty",
+      "word": "Bourgogne",
+      "tome": 3,
+      "page": 27
+    },
+    {
+      "type": "def_empty",
+      "word": "bracelet",
+      "tome": 3,
+      "page": 29
+    },
+    {
+      "type": "def_empty",
+      "word": "caban",
+      "tome": 3,
+      "page": 36
+    }
+  ]
+}

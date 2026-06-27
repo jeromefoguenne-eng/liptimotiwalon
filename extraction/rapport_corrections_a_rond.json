@@ -1,0 +1,160 @@
+{
+  "total_corrections": 17,
+  "total_entries": 14324,
+  "reference_words_used": 753,
+  "corrections": [
+    {
+      "original": "algarade algarade",
+      "corrected": "algaråde algarade",
+      "matched_token": "algarade",
+      "correct_form": "algaråde",
+      "tome": 3,
+      "page": 6,
+      "slice": "tome3-06.pdf"
+    },
+    {
+      "original": "basse",
+      "corrected": "båsse",
+      "matched_token": "basse",
+      "correct_form": "båsse",
+      "tome": 3,
+      "page": 18,
+      "slice": "tome3-18.pdf"
+    },
+    {
+      "original": "basse vuwe",
+      "corrected": "båsse vuwe",
+      "matched_token": "basse",
+      "correct_form": "båsse",
+      "tome": 3,
+      "page": 27,
+      "slice": "tome3-27.pdf"
+    },
+    {
+      "original": "baye",
+      "corrected": "båye",
+      "matched_token": "baye",
+      "correct_form": "båye",
+      "tome": 3,
+      "page": 15,
+      "slice": "tome3-15.pdf"
+    },
+    {
+      "original": "baye",
+      "corrected": "båye",
+      "matched_token": "baye",
+      "correct_form": "båye",
+      "tome": 2,
+      "page": 14,
+      "slice": "tome2-25.pdf"
+    },
+    {
+      "original": "blame",
+      "corrected": "blåme",
+      "matched_token": "blame",
+      "correct_form": "blåme",
+      "tome": 2,
+      "page": 2,
+      "slice": "tome2-08.pdf"
+    },
+    {
+      "original": "cafard",
+      "corrected": "cafård",
+      "matched_token": "cafard",
+      "correct_form": "cafård",
+      "tome": 2,
+      "page": 28,
+      "slice": "tome2-08.pdf"
+    },
+    {
+      "original": "gale",
+      "corrected": "Gåle",
+      "matched_token": "gale",
+      "correct_form": "Gåle",
+      "tome": 3,
+      "page": 21,
+      "slice": "tome3-21.pdf"
+    },
+    {
+      "original": "gale",
+      "corrected": "Gåle",
+      "matched_token": "gale",
+      "correct_form": "Gåle",
+      "tome": 2,
+      "page": 49,
+      "slice": "tome2-24.pdf"
+    },
+    {
+      "original": "gale gale",
+      "corrected": "Gåle gale",
+      "matched_token": "gale",
+      "correct_form": "Gåle",
+      "tome": 3,
+      "page": 12,
+      "slice": "tome3-12.pdf"
+    },
+    {
+      "original": "game ou d'filè s'",
+      "corrected": "Gåme ou d'filè s'",
+      "matched_token": "game",
+      "correct_form": "Gåme",
+      "tome": 3,
+      "page": 11,
+      "slice": "tome3-11.pdf"
+    },
+    {
+      "original": "mayin",
+      "corrected": "Måyin",
+      "matched_token": "mayin",
+      "correct_form": "Måyin",
+      "tome": 2,
+      "page": 42,
+      "slice": "tome2-24.pdf"
+    },
+    {
+      "original": "paye",
+      "corrected": "Påye",
+      "matched_token": "paye",
+      "correct_form": "Påye",
+      "tome": 3,
+      "page": 9,
+      "slice": "tome3-09.pdf"
+    },
+    {
+      "original": "paye",
+      "corrected": "Påye",
+      "matched_token": "paye",
+      "correct_form": "Påye",
+      "tome": 2,
+      "page": 25,
+      "slice": "tome2-24.pdf"
+    },
+    {
+      "original": "Sart",
+      "corrected": "Sårt",
+      "matched_token": "sart",
+      "correct_form": "Sårt",
+      "tome": 3,
+      "page": 8,
+      "slice": "tome3-08.pdf"
+    },
+    {
+      "original": "Spa",
+      "corrected": "Spå",
+      "matched_token": "spa",
+      "correct_form": "Spå",
+      "tome": 3,
+      "page": 8,
+      "slice": "tome3-08.pdf"
+    },
+    {
+      "original": "Spa",
+      "corrected": "Spå",
+      "matched_token": "spa",
+      "correct_form": "Spå",
+      "tome": 2,
+      "page": 8,
+      "slice": "tome2-11.pdf"
+    }
+  ]
+}

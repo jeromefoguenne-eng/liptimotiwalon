@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Audit diacritiques — Dictionnaire Wallon</title>
+<style>
+  body { font-family: 'Georgia', serif; max-width: 1400px; margin: 0 auto; padding: 20px;
+         background: #1a1a2e; color: #e0e0e0; }
+  h1 { color: #e94560; border-bottom: 3px solid #e94560; padding-bottom: 10px; }
+  h2 { color: #0f3460; background: #e94560; padding: 8px 15px; border-radius: 4px; color: white; }
+  .stats { display: flex; gap: 15px; flex-wrap: wrap; margin: 20px 0; }
+  .stat { background: #16213e; border-radius: 8px; padding: 15px 20px;
+           box-shadow: 0 2px 8px rgba(0,0,0,.3); min-width: 140px; border: 1px solid #0f3460; }
+  .stat .val { font-size: 2em; font-weight: bold; color: #e94560; }
+  .stat .lbl { font-size: .8em; color: #aaa; margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; background: #16213e;
+           box-shadow: 0 2px 8px rgba(0,0,0,.3); border-radius: 8px;
+           overflow: hidden; margin: 15px 0; }
+  th { background: #0f3460; color: white; padding: 10px 12px; text-align: left; }
+  td { padding: 8px 12px; border-bottom: 1px solid #0f3460; vertical-align: top; }
+  tr:hover { background: #1a1a3e; }
+</style>
+</head>
+<body>
+<h1>🔤 Audit des diacritiques — Dictionnaire Wallon (Jean Haust)</h1>
+
+<div class="stats">
+  <div class="stat"><div class="val">22632</div><div class="lbl">Entrées totales</div></div>
+  <div class="stat"><div class="val">9293</div><div class="lbl">Mots avec diacritiques</div></div>
+  <div class="stat"><div class="val" style="color:#27ae60">3295</div><div class="lbl">Entrées avec å</div></div>
+  <div class="stat"><div class="val" style="color:#f39c12">172</div><div class="lbl">Suspects a→å manquant</div></div>
+  <div class="stat"><div class="val">38</div><div class="lbl">Chars Unicode uniques</div></div>
+</div>
+
+<h2>Inventaire des caractères Unicode</h2>
+<table>
+  <tr><th>Char</th><th>Statut</th><th>Code</th><th>Nom Unicode</th><th>Occurrences</th><th>Exemples</th></tr>
+  
+    <tr>
+      <td style="font-size:1.5em;text-align:center">è</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00E8</td>
+      <td>LATIN SMALL LETTER E WITH GRAVE</td>
+      <td style="text-align:right"><strong>17142</strong></td>
+      <td style="font-size:.85em;color:#555">daguèt, goudron végétal | Drwèhe | drwète (drète F), s.</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">é</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00E9</td>
+      <td>LATIN SMALL LETTER E WITH ACUTE</td>
+      <td style="text-align:right"><strong>14317</strong></td>
+      <td style="font-size:.85em;color:#555">d [dé], la lettre d | daguèt, goudron végétal | duwél, duel</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">—</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+2014</td>
+      <td>EM DASH</td>
+      <td style="text-align:right"><strong>8367</strong></td>
+      <td style="font-size:.85em;color:#555">knèp: è — | uni, unir; — part- | David, David ; — s.</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">û</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00FB</td>
+      <td>LATIN SMALL LETTER U WITH CIRCUMFLEX</td>
+      <td style="text-align:right"><strong>8328</strong></td>
+      <td style="font-size:.85em;color:#555">dûhâbe, -âve | eiheûre | fwèrnoûri, fwèrsôlé</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">ê</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00EA</td>
+      <td>LATIN SMALL LETTER E WITH CIRCUMFLEX</td>
+      <td style="text-align:right"><strong>7360</strong></td>
+      <td style="font-size:.85em;color:#555">d'zêrt | duzêye | luzêre</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">î</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00EE</td>
+      <td>LATIN SMALL LETTER I WITH CIRCUMFLEX</td>
+      <td style="text-align:right"><strong>7210</strong></td>
+      <td style="font-size:.85em;color:#555">irégulârité, îréguher, -ère, -éremint | k(i)vàrtchi (R,G,F),traîner enzigzag | kîwite  pîwitche</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">â</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00E2</td>
+      <td>LATIN SMALL LETTER A WITH CIRCUMFLEX</td>
+      <td style="text-align:right"><strong>6650</strong></td>
+      <td style="font-size:.85em;color:#555">bâbe | da, dâ, dal, dås, ou mieux d'à, etc. | dague [dâk], t., dague</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">à</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00E0</td>
+      <td>LATIN SMALL LETTER A WITH GRAVE</td>
+      <td style="text-align:right"><strong>6043</strong></td>
+      <td style="font-size:.85em;color:#555">da, dâ, dal, dås, ou mieux d'à, etc. | duràbe, -àve, durable | fwite, fwiyàrd</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">ô</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00F4</td>
+      <td>LATIN SMALL LETTER O WITH CIRCUMFLEX</td>
+      <td style="text-align:right"><strong>4687</strong></td>
+      <td style="font-size:.85em;color:#555">Babel (ou Babilône) | fwèrnoûri, fwèrsôlé | istôriète, -ryin</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">å</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00E5</td>
+      <td>LATIN SMALL LETTER A WITH RING ABOVE</td>
+      <td style="text-align:right"><strong>3337</strong></td>
+      <td style="font-size:.85em;color:#555">da, dâ, dal, dås, ou mieux d'à, etc. | fåt | bådet</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">ç</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00E7</td>
+      <td>LATIN SMALL LETTER C WITH CEDILLA</td>
+      <td style="text-align:right"><strong>1168</strong></td>
+      <td style="font-size:.85em;color:#555">vâçale | vâçale | maçon(fig. 389-390)</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">ù</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00F9</td>
+      <td>LATIN SMALL LETTER U WITH GRAVE</td>
+      <td style="text-align:right"><strong>726</strong></td>
+      <td style="font-size:.85em;color:#555">dèluje [-ùch] (-udje H) | radjoûr (qqf. -où) | abùvrer</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">•</td>
+      <td style="color:#e74c3c;font-weight:bold">⚠</td>
+      <td style="font-family:monospace">U+2022</td>
+      <td>BULLET</td>
+      <td style="text-align:right"><strong>640</strong></td>
+      <td style="font-size:.85em;color:#555">débine (dibène R, W), débine• | £*»***<*»« a^«i« V ?*.'•/ vt-Oe,!>&**«€  | «•pètchî</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">»</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00BB</td>
+      <td>RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK</td>
+      <td style="text-align:right"><strong>538</strong></td>
+      <td style="font-size:.85em;color:#555">balade, « ballade »,promenade | kinê (R», L, F) | £*»***<*»« a^«i« V ?*.'•/ vt-Oe,!>&**«€ </td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">«</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00AB</td>
+      <td>LEFT-POINTING DOUBLE ANGLE QUOTATION MARK</td>
+      <td style="text-align:right"><strong>499</strong></td>
+      <td style="font-size:.85em;color:#555">balade, « ballade »,promenade | «cèle, ficelle | «ehe(atténuatif defoute)</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">œ</td>
+      <td style="color:#e74c3c;font-weight:bold">⚠</td>
+      <td style="font-family:monospace">U+0153</td>
+      <td>LATIN SMALL LIGATURE OE</td>
+      <td style="text-align:right"><strong>347</strong></td>
+      <td style="font-size:.85em;color:#555">èdurei, endurcir (le cœur) | maneûve, 1. t, manœuvre | flotch'ter, garnir de nœuds de rubans</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">É</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00C9</td>
+      <td>LATIN CAPITAL LETTER E WITH ACUTE</td>
+      <td style="text-align:right"><strong>339</strong></td>
+      <td style="font-size:.85em;color:#555">Édjipe [i-], Egypte | Érôde [ê*-], Hérode | Ében</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">ï</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00EF</td>
+      <td>LATIN SMALL LETTER I WITH DIAERESIS</td>
+      <td style="text-align:right"><strong>191</strong></td>
+      <td style="font-size:.85em;color:#555">Calfe, Caïphe | digue [dïk], digue | hère [-i-], haïr</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">£</td>
+      <td style="color:#e74c3c;font-weight:bold">⚠</td>
+      <td style="font-family:monospace">U+00A3</td>
+      <td>POUND SIGN</td>
+      <td style="text-align:right"><strong>79</strong></td>
+      <td style="font-size:.85em;color:#555">£*»***<*»« a^«i« V ?*.'•/ vt-Oe,!>&**«€  | %_£ £ 4F V <? * £ £ # | |3£t«#IMH'JflH4fc'l</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">ë</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00EB</td>
+      <td>LATIN SMALL LETTER E WITH DIAERESIS</td>
+      <td style="text-align:right"><strong>76</strong></td>
+      <td style="font-size:.85em;color:#555">pèrët, -e (JupiUe, Trembleur) | crèche (de Noël) | cadet, -ette cadëf, -éfe</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">È</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00C8</td>
+      <td>LATIN CAPITAL LETTER E WITH GRAVE</td>
+      <td style="text-align:right"><strong>69</strong></td>
+      <td style="font-size:.85em;color:#555">Èrnèle | LAMBEAU, MENU, MOTTE, PIÈCE</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">°</td>
+      <td style="color:#e74c3c;font-weight:bold">⚠</td>
+      <td style="font-family:monospace">U+00B0</td>
+      <td>DEGREE SIGN</td>
+      <td style="text-align:right"><strong>56</strong></td>
+      <td style="font-size:.85em;color:#555">DL, v°</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">Ê</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00CA</td>
+      <td>LATIN CAPITAL LETTER E WITH CIRCUMFLEX</td>
+      <td style="text-align:right"><strong>47</strong></td>
+      <td style="font-size:.85em;color:#555"></td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">Ô</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00D4</td>
+      <td>LATIN CAPITAL LETTER O WITH CIRCUMFLEX</td>
+      <td style="text-align:right"><strong>36</strong></td>
+      <td style="font-size:.85em;color:#555">Ode [Ôt] | godje [gÔlch; qqf. kÔtch : G 512] | gros, grosse [-Ô-]</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">À</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00C0</td>
+      <td>LATIN CAPITAL LETTER A WITH GRAVE</td>
+      <td style="text-align:right"><strong>27</strong></td>
+      <td style="font-size:.85em;color:#555">Verv., -îÀ- JupiUe, Hognoui | çÀ; ~ le guilledou, la prétantaine</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">Ç</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00C7</td>
+      <td>LATIN CAPITAL LETTER C WITH CEDILLA</td>
+      <td style="text-align:right"><strong>22</strong></td>
+      <td style="font-size:.85em;color:#555"></td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">Ï</td>
+      <td style="color:#e74c3c;font-weight:bold">⚠</td>
+      <td style="font-family:monospace">U+00CF</td>
+      <td>LATIN CAPITAL LETTER I WITH DIAERESIS</td>
+      <td style="text-align:right"><strong>10</strong></td>
+      <td style="font-size:.85em;color:#555">vélo [vêlÏÏ], vélo</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">Â</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00C2</td>
+      <td>LATIN CAPITAL LETTER A WITH CIRCUMFLEX</td>
+      <td style="text-align:right"><strong>9</strong></td>
+      <td style="font-size:.85em;color:#555"></td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">Î</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00CE</td>
+      <td>LATIN CAPITAL LETTER I WITH CIRCUMFLEX</td>
+      <td style="text-align:right"><strong>5</strong></td>
+      <td style="font-size:.85em;color:#555">louwi (-Î F</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">Ù</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00D9</td>
+      <td>LATIN CAPITAL LETTER U WITH GRAVE</td>
+      <td style="text-align:right"><strong>4</strong></td>
+      <td style="font-size:.85em;color:#555">numéro, ni-, lu-, Ù-, numéro | numéro, ni-, lu-, Ù-, numéro</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">„</td>
+      <td style="color:#e74c3c;font-weight:bold">⚠</td>
+      <td style="font-family:monospace">U+201E</td>
+      <td>DOUBLE LOW-9 QUOTATION MARK</td>
+      <td style="text-align:right"><strong>4</strong></td>
+      <td style="font-size:.85em;color:#555">tchike, f„ chique de tabac</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">Ë</td>
+      <td style="color:#e74c3c;font-weight:bold">⚠</td>
+      <td style="font-family:monospace">U+00CB</td>
+      <td>LATIN CAPITAL LETTER E WITH DIAERESIS</td>
+      <td style="text-align:right"><strong>4</strong></td>
+      <td style="font-size:.85em;color:#555"></td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">Û</td>
+      <td style="color:#27ae60;font-weight:bold">✓</td>
+      <td style="font-family:monospace">U+00DB</td>
+      <td>LATIN CAPITAL LETTER U WITH CIRCUMFLEX</td>
+      <td style="text-align:right"><strong>4</strong></td>
+      <td style="font-size:.85em;color:#555">étude [-ÛZ], étude</td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">♦</td>
+      <td style="color:#e74c3c;font-weight:bold">⚠</td>
+      <td style="font-family:monospace">U+2666</td>
+      <td>BLACK DIAMOND SUIT</td>
+      <td style="text-align:right"><strong>3</strong></td>
+      <td style="font-size:.85em;color:#555"></td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">Œ</td>
+      <td style="color:#e74c3c;font-weight:bold">⚠</td>
+      <td style="font-family:monospace">U+0152</td>
+      <td>LATIN CAPITAL LIGATURE OE</td>
+      <td style="text-align:right"><strong>3</strong></td>
+      <td style="font-size:.85em;color:#555"></td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">©</td>
+      <td style="color:#e74c3c;font-weight:bold">⚠</td>
+      <td style="font-family:monospace">U+00A9</td>
+      <td>COPYRIGHT SIGN</td>
+      <td style="text-align:right"><strong>2</strong></td>
+      <td style="font-size:.85em;color:#555"></td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">€</td>
+      <td style="color:#e74c3c;font-weight:bold">⚠</td>
+      <td style="font-family:monospace">U+20AC</td>
+      <td>EURO SIGN</td>
+      <td style="text-align:right"><strong>1</strong></td>
+      <td style="font-size:.85em;color:#555">£*»***<*»« a^«i« V ?*.'•/ vt-Oe,!>&**«€ </td>
+    </tr>
+    <tr>
+      <td style="font-size:1.5em;text-align:center">®</td>
+      <td style="color:#e74c3c;font-weight:bold">⚠</td>
+      <td style="font-family:monospace">U+00AE</td>
+      <td>REGISTERED SIGN</td>
+      <td style="text-align:right"><strong>1</strong></td>
+      <td style="font-size:.85em;color:#555"></td>
+    </tr>
+</table>
+
+<h2>Entrées suspectes — 'a' qui devrait être 'å' (172 cas)</h2>
+<table>
+  <tr><th>Réf.</th><th>Mot-vedette</th><th>Match mot</th><th>Match def</th><th>Extrait définition</th></tr>
+  
+    <tr>
+      <td>T2 p.3</td>
+      <td><strong>danse</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>amon</em></td>
+      <td style="font-size:.8em">djouweû d' —, ménétrier (voy. mèstré) ; inlrer èl — ; aler al —, aller au bal; c</td>
+    </tr>
+    <tr>
+      <td>T2 p.3</td>
+      <td><strong>dâner, danner [dô-, dâ-], damner</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>able</em></td>
+      <td style="font-size:.8em">n-a s' feume quel fêl — (voy. dâminer) ; dj'a on clå qui m' fêl — mârlîr; — ine </td>
+    </tr>
+    <tr>
+      <td>T2 p.3</td>
+      <td><strong>racomôder,  -onder, qqf.rak(i)môder</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>able</em></td>
+      <td style="font-size:.8em">rac commoder : dji racomôde Vârmâ ; il èstît d' brogne, onlès-aracomôde, réconci</td>
+    </tr>
+    <tr>
+      <td>T2 p.4</td>
+      <td><strong>omèye (R, L, G</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>amon</em></td>
+      <td style="font-size:.8em">-éye Jalhay), mou, malléable, flexible : mi roncin a lès djèrèls omèyes (R2)- 1.</td>
+    </tr>
+    <tr>
+      <td>T2 p.4</td>
+      <td><strong>warandi (Sprimont</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>abri</em></td>
+      <td style="font-size:.8em">-fi F), wèrandi (Esneux, etc.), garantir : si — dé vini, de solo. Voy. garanti. </td>
+    </tr>
+    <tr>
+      <td>T2 p.5</td>
+      <td><strong>magna</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>awe</em></td>
+      <td style="font-size:.8em">bouche (syn. rare de djêve, gueûye ; voy. amagna) : clô V —; dji v' frè péter vo</td>
+    </tr>
+    <tr>
+      <td>T2 p.5</td>
+      <td><strong>sansoûler (F), ord* sansouwer</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>awe</em></td>
+      <td style="font-size:.8em">si —, s'exténuer, s'épuiser (à la peine) : dji m' sansowe (-ouwêye) li cwér èi V</td>
+    </tr>
+    <tr>
+      <td>T2 p.6</td>
+      <td><strong>calmène, calamine</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>amon</em></td>
+      <td style="font-size:.8em">ovrer al —, tra vailler à l'exploitation de la calamine, calmotrê (G, F), m., ga</td>
+    </tr>
+    <tr>
+      <td>T2 p.6</td>
+      <td><strong>dètoûrnèmint (néol.), détournement</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>amon</em></td>
+      <td style="font-size:.8em">ti — d' Moûse, de la Meuse ; Ua fêtdès —amon s' messe. | détourner (néol.), déto</td>
+    </tr>
+    <tr>
+      <td>T2 p.6</td>
+      <td><strong>détacher, détacher</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>able</em></td>
+      <td style="font-size:.8em">ses parints l'ont détaché di s' crapôde; i s' détache di lèy (arch. dilèlchl dan</td>
+    </tr>
+    <tr>
+      <td>T2 p.6</td>
+      <td><strong>vert (-é-, -ê-)</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>adje</em></td>
+      <td style="font-size:.8em">vête, vert, -e : vêrt-pèheû (Verviers), martin-pêcheur, voy. péZieû ; vête djole</td>
+    </tr>
+    <tr>
+      <td>T2 p.7</td>
+      <td><strong>caloner (qqf. canoner), canonner</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>abri</em></td>
+      <td style="font-size:.8em">-r— assaillir à coups de projectiles : nos l'avans caloné d' houyois d' ntvaye. </td>
+    </tr>
+    <tr>
+      <td>T2 p.7</td>
+      <td><strong>dèzir, d'zlr, désir</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>able</em></td>
+      <td style="font-size:.8em">continterses d'zîrs. \ -er : i d(è)zîretol çou qu'iveut. ]-âbe, -âve, -able. | -</td>
+    </tr>
+    <tr>
+      <td>T2 p.9</td>
+      <td><strong>måle</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>avin</em></td>
+      <td style="font-size:.8em">(fém. de md 2, et de mâva), 1. maie, mauvaise, méchante : n'a nou mâva côp (ou i</td>
+    </tr>
+    <tr>
+      <td>T2 p.10</td>
+      <td><strong>d</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>able</em></td>
+      <td style="font-size:.8em">i chlïrer. -âbe ou -âve, -èdje, de-, déchiffrer, -able, -ement</td>
+    </tr>
+    <tr>
+      <td>T2 p.10</td>
+      <td><strong>goumaye</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>aye</em></td>
+      <td style="font-size:.8em">(qqf. cou-), t., «coumaille», agglomérat,de substances (minerai, argile durcie a</td>
+    </tr>
+    <tr>
+      <td>T2 p.11</td>
+      <td><strong>ad'Ié</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>amon</em></td>
+      <td style="font-size:.8em">et prép., auprès : i nèl qwite måy, il est lofer —; i gmeûre a Grim'- gnêye, ~ L</td>
+    </tr>
+    <tr>
+      <td>T2 p.11</td>
+      <td><strong>adjineer</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>amon</em></td>
+      <td style="font-size:.8em">ou ord' adjineener, -ins'ner (néol. -ans'ner), agencer, ajuster : in- ovrèdje qu</td>
+    </tr>
+    <tr>
+      <td>T2 p.11</td>
+      <td><strong>man'ç'rèye  (F, H). | man'ciant, -e</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>arme</em></td>
+      <td style="font-size:.8em">me naçant, -e. manèdje, m., 1. ménage : Uni —; si mète è —; fé mâva —; on k'tape</td>
+    </tr>
+    <tr>
+      <td>T2 p.11</td>
+      <td><strong>vindâbe, -âve</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>amon</em></td>
+      <td style="font-size:.8em">ou vindûie (vindissîre Huy), vendable, de vente facile. | vindâhe, t., moment pr</td>
+    </tr>
+    <tr>
+      <td>T2 p.11</td>
+      <td><strong>â-d'foû, au-dehors</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>adje</em></td>
+      <td style="font-size:.8em">voy. d'foû. ad'hinde, v. tr. et intr., descendre (vers celui qui parle) : ad'hin</td>
+    </tr>
+    <tr>
+      <td>T2 p.12</td>
+      <td><strong>adon (qqf. anon), alors</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>able</em></td>
+      <td style="font-size:.8em">on fêl coula asleûre corne ~ ; adon-pwis, après quoi : nos nos r'pwèzis a milan </td>
+    </tr>
+    <tr>
+      <td>T2 p.12</td>
+      <td><strong>d(i)finde, dis-, défendre</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>able</em></td>
+      <td style="font-size:.8em">i d(is)find 'ne måle case; dji v' di(s)find d'intrer chai; i s'a bin d'findou. |</td>
+    </tr>
+    <tr>
+      <td>T2 p.12</td>
+      <td><strong>havèdje</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>adje</em></td>
+      <td style="font-size:.8em">action de haver : ti —dès pês ; — t. de houill-, fé s' — (-adje Se raing). Voy h</td>
+    </tr>
+    <tr>
+      <td>T2 p.12</td>
+      <td><strong>lîbe, libre</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>amon</em></td>
+      <td style="font-size:.8em">il a ses Ichamps lîbes, il a les coudéesfranches; il èsl trop — divins ses d'vis</td>
+    </tr>
+    <tr>
+      <td>T2 p.12</td>
+      <td><strong>vinta</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>amon</em></td>
+      <td style="font-size:.8em">vanne, vantail d'une vanne : leverV — po fé aler Vêwe so Vmolin. [Anc. fr. venta</td>
+    </tr>
+    <tr>
+      <td>T2 p.15</td>
+      <td><strong>dlhê</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>arme</em></td>
+      <td style="font-size:.8em">(Hesbaye),  dîhin  (Liers), dizeau, tas de dix gerbes : mêle è —. Voy. copale, t</td>
+    </tr>
+    <tr>
+      <td>T2 p.15</td>
+      <td><strong>haylme, qqf. -Ine, haine, néol. hinne</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>abri</em></td>
+      <td style="font-size:.8em">il a'ne — conle di mi ; prinde ine — conte ine djint. Voy. Zié 4, hère. haytre (</td>
+    </tr>
+    <tr>
+      <td>T2 p.15</td>
+      <td><strong>ratcheter, racheter</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>able</em></td>
+      <td style="font-size:.8em">si —, anc', se payer un remplaçant (à l'armée) ; — dès bans d' marièdje, payer à</td>
+    </tr>
+    <tr>
+      <td>T2 p.15</td>
+      <td><strong>ratrêre, attirer ou ramener (qn) à soi</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>abri</em></td>
+      <td style="font-size:.8em">èle ratrêt los lès djonnes-omes de vinâve ; ci hèst nin insi qui v' ratrêrez vos</td>
+    </tr>
+    <tr>
+      <td>T2 p.15</td>
+      <td><strong>èsprinde, allumer</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>alou</em></td>
+      <td style="font-size:.8em">dj'èsprind m' pipe ; èsprindez V lampe; li feû n'est nin bin espris; li lampe è-</td>
+    </tr>
+    <tr>
+      <td>T2 p.17</td>
+      <td><strong>gueûzer</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>aye</em></td>
+      <td style="font-size:.8em">gueuser, avoir faim (pår di sette ou pauvreté) : ongueûzêye qwand on hoûveûre ni</td>
+    </tr>
+    <tr>
+      <td>T2 p.17</td>
+      <td><strong>Guèminih, Gui-</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>amon</em></td>
+      <td style="font-size:.8em">Gemmenich (village). guère ou ord' guère [-é-], guerre : aler al —; on fêt bin V</td>
+    </tr>
+    <tr>
+      <td>T2 p.19</td>
+      <td><strong>louwé (twé R», L)</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>are</em></td>
+      <td style="font-size:.8em">avu Vbrès' foû de - avoir le bras démis, syn. dispale ; avu l djambe foû dé -, v</td>
+    </tr>
+    <tr>
+      <td>T2 p.19</td>
+      <td><strong>matante, 1. tante</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>amon</em></td>
+      <td style="font-size:.8em">dji va amon m' — ; ine — di souke, tante non mariée, qui gâte ses neveux ; plais</td>
+    </tr>
+    <tr>
+      <td>T2 p.19</td>
+      <td><strong>rèboûrser (néol. ramb-), rembourser</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>able</em></td>
+      <td style="font-size:.8em">dji rèboûrsêye li capital d'ine rinle. Dér- -âve, -able ; -èmint, -ement. (M Fer</td>
+    </tr>
+    <tr>
+      <td>T2 p.22</td>
+      <td><strong>chèrpint</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>amon</em></td>
+      <td style="font-size:.8em">(arch. sièrpinl), serpent, sur tout au fig. : ine linme, ine gueûye di —, langue</td>
+    </tr>
+    <tr>
+      <td>T2 p.22</td>
+      <td><strong>réforme, -er, -àbe, -âve</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>able</em></td>
+      <td style="font-size:.8em">(ri- F), réforme, réformer, -able.</td>
+    </tr>
+    <tr>
+      <td>T2 p.23</td>
+      <td><strong>Bernard, Bernard</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>amon</em></td>
+      <td style="font-size:.8em">aler amon —, t. d'argot, au cabinet d'aisances. | Bèrnâr-</td>
+    </tr>
+    <tr>
+      <td>T2 p.24</td>
+      <td><strong>amon (èmon Huy, Verviers)</strong></td>
+      <td style="color:#e67e22"><em>amon</em></td>
+      <td style="color:#c0392b"><em>amon</em></td>
+      <td style="font-size:.8em">chez : chèrvi — lès djins, être en service chez des particuliers ; ~ Pi'ére, che</td>
+    </tr>
+    <tr>
+      <td>T2 p.24</td>
+      <td><strong>respirer</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>able</em></td>
+      <td style="font-size:.8em">respirons 'ne gote ; i h rèspîre pus ; dj'a V coûVrèce d'alêne, dji rêspîre (ou </td>
+    </tr>
+    <tr>
+      <td>T2 p.24</td>
+      <td><strong>rèsbate (Hervé)</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>able</em></td>
+      <td style="font-size:.8em">lès vatches su rèsbatèt, les vaches donnent plus de lait; — à Stavelot : lès vat</td>
+    </tr>
+    <tr>
+      <td>T2 p.25</td>
+      <td><strong>amwèee</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>arme</em></td>
+      <td style="font-size:.8em">1. appât (pour prendre surtout le poisson) : mêle ine — (syn. bètchèye) ; ine bâ</td>
+    </tr>
+    <tr>
+      <td>T2 p.25</td>
+      <td><strong>dissoûde, dissoudre (une société)</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>alon</em></td>
+      <td style="font-size:.8em">li rmè dissoûl (d'ssoût F) lès Tchambes ; — di Valon (F), ou mieux mète trimper </td>
+    </tr>
+    <tr>
+      <td>T2 p.25</td>
+      <td><strong>rèssâver</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>adje</em></td>
+      <td style="font-size:.8em">si —,s'enfuir, se sauver. Voy. rassâver. 1.rèsse, v., être de nouveau : dji k'mi</td>
+    </tr>
+    <tr>
+      <td>T2 p.30</td>
+      <td><strong>apèzanti, appesantir, alourdir</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>adje</em></td>
+      <td style="font-size:.8em">i s'apè- zanlih avou l'adje ; ni v' lèytz nin insi — a m' brès'; l'èfanl keûve i</td>
+    </tr>
+    <tr>
+      <td>T2 p.30</td>
+      <td><strong>rie'mander, rik'-, recommander</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>able</em></td>
+      <td style="font-size:.8em">. — 'ne lèle ; dji rh ric'mande ; — si-âme à bon Diu ; spécial' recommander au p</td>
+    </tr>
+    <tr>
+      <td>T2 p.31</td>
+      <td><strong>aplé, s.</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>abri</em></td>
+      <td style="font-size:.8em">rucher, abri des ruches ; voy. api.[Latin appliclum.] apliquer,appliquer :s'—a b</td>
+    </tr>
+    <tr>
+      <td>T2 p.31</td>
+      <td><strong>Cocagne</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>amon</em></td>
+      <td style="font-size:.8em">payis d' — ; mat d' —. cocher, m., cocher : on — d' vijilante. \ coehére : pmète</td>
+    </tr>
+    <tr>
+      <td>T2 p.33</td>
+      <td><strong>r(i)doter, redouter</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>able</em></td>
+      <td style="font-size:.8em">dji r'dole cist-ome la. | -àbe, -able.</td>
+    </tr>
+    <tr>
+      <td>T2 p.33</td>
+      <td><strong>tèzi (Liège, FlémaUe)</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>abri</em></td>
+      <td style="font-size:.8em">intr., unip., syn. boûlener, répandre une odeur bitu mineuse : i k'mince a —; i </td>
+    </tr>
+    <tr>
+      <td>T2 p.34</td>
+      <td><strong>mohion</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>amon</em></td>
+      <td style="font-size:.8em">voy. mohia. 1. mohon, moineau (voy. gorê-mohon) : U — tchîp'lêye ; dji so rilche</td>
+    </tr>
+    <tr>
+      <td>T2 p.35</td>
+      <td><strong>pistole, voy. caracole. | pistolet</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>arme</em></td>
+      <td style="font-size:.8em">pis tolet (arme à feu) ; — petit pain (fig. 509) ; Fig. 509 : pistolet. — fig., </td>
+    </tr>
+    <tr>
+      <td>T2 p.36</td>
+      <td><strong>mon-n-onke, oncle</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>amon</em></td>
+      <td style="font-size:.8em">alèz' amon vosse ~ ; on ~ di souke, un oncle célibataire (voy. matan te) ; — pla</td>
+    </tr>
+    <tr>
+      <td>T2 p.37</td>
+      <td><strong>confort, -âbe</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>able</em></td>
+      <td style="font-size:.8em">ou -âve, confort, -able.</td>
+    </tr>
+    <tr>
+      <td>T2 p.37</td>
+      <td><strong>djombâ, djôbà</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>amon</em></td>
+      <td style="font-size:.8em">cog ~, coq haut en jambes; on grand —, un grand flandrin; amon —, chez Joba (n. </td>
+    </tr>
+    <tr>
+      <td>T2 p.37</td>
+      <td><strong>tins, timps, temps</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>adje</em></td>
+      <td style="font-size:.8em">li — d'asleûre, le t. présent ; li — d' av'ni (F), l'avenir ; (dé) — påsse, ou d</td>
+    </tr>
+    <tr>
+      <td>T2 p.38</td>
+      <td><strong>tir, tir (d'une arme)</strong></td>
+      <td style="color:#e67e22"><em>arme</em></td>
+      <td style="color:#c0392b"><em></em></td>
+      <td style="font-size:.8em">régler V — ; — Ueu où l'on s'exerce au tir : aler à —. \ 1. tirade, tirade (de v</td>
+    </tr>
+    <tr>
+      <td>T2 p.39</td>
+      <td><strong>côp [ko]</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>arme</em></td>
+      <td style="font-size:.8em">coup : dji m'a nnè on — conte Vârmâ; si baie a — d' pogn; diner dès — d' pi, d' </td>
+    </tr>
+    <tr>
+      <td>T2 p.39</td>
+      <td><strong>spitant, -e, sémillant, déluré, -e</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>adje</em></td>
+      <td style="font-size:.8em">il est co bin — po si-adje ; ine crapôde qu'est trop spitante. Voy. spiter.</td>
+    </tr>
+    <tr>
+      <td>T2 p.42</td>
+      <td><strong>stampe, t, 1. étampe (outil)</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>arme</em></td>
+      <td style="font-size:.8em">— t. de houill., massif de roches qui sépare deux couches de houille ; distance </td>
+    </tr>
+    <tr>
+      <td>T2 p.44</td>
+      <td><strong>dovri, doviért</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>are</em></td>
+      <td style="font-size:.8em">voy. drovi. 1. doyâ, érable : li — chèv (sert) a fé dès brès' di tchèrèle, pace </td>
+    </tr>
+    <tr>
+      <td>T2 p.46</td>
+      <td><strong>atoumanee</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>alou</em></td>
+      <td style="font-size:.8em">coïncidence, hasard : gueZe —! c'è-st-on-côp d'—; ci sèreût 'ne bêle — qui v's-a</td>
+    </tr>
+    <tr>
+      <td>T2 p.46</td>
+      <td><strong>atouwer (anc. fr. atuer), tutoyer</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>alou</em></td>
+      <td style="font-size:.8em">il alowe si mère, il tutoie sa mère. Le tu- toyement est familier et påsse ordin</td>
+    </tr>
+    <tr>
+      <td>T2 p.47</td>
+      <td><strong>boueher (botchî H, boutchî D), s.</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>amon</em></td>
+      <td style="font-size:.8em">néol.. boucher, anc* mangon : aler al tchår amon V —; fig. 119. I bouchère, f., </td>
+    </tr>
+    <tr>
+      <td>T2 p.50</td>
+      <td><strong>av'nant, -e, avenant, qui agrée</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>avin</em></td>
+      <td style="font-size:.8em">elle est si av'nante (voy. avinanl) ; — a Vav'nant ou a Vam'nant, a l'ad'vinanl,</td>
+    </tr>
+    <tr>
+      <td>T2 p.50</td>
+      <td><strong>avîyi</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>adje</em></td>
+      <td style="font-size:.8em">nos-a-st— turlos; bon cour havîyih måy ; elle est bin avtyèye, elle avtyih fwérl</td>
+    </tr>
+    <tr>
+      <td>T2 p.61</td>
+      <td><strong>prézider, présider</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>able</em></td>
+      <td style="font-size:.8em">i prézide [-it] ou -dèye Vassimblêye. | -ince, -int, -e, néol. -ance, -ant, -e, </td>
+    </tr>
+    <tr>
+      <td>T2 p.62</td>
+      <td><strong>cropant, cropihant, -e, croupissant, -e</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>amon</em></td>
+      <td style="font-size:.8em">lès cropihanlès-êwes alirèt lès maladèyes. \ crope-coulêye, s. m. ou f., casanie</td>
+    </tr>
+    <tr>
+      <td>T2 p.68</td>
+      <td><strong>bruzi, bruzu (-f W</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>alou</em></td>
+      <td style="font-size:.8em">burzî Verviers), m., braise : li boVdjl m'apwèVrè on sèlch di — ; mêlez 'ne poug</td>
+    </tr>
+    <tr>
+      <td>T3 p.1</td>
+      <td><strong>Aywaille</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>aye</em></td>
+      <td style="font-size:.8em">Êwèye, -aye, village. Strée ; buré Hannut) ; — voy. baratte. babil babile (-èle </td>
+    </tr>
+    <tr>
+      <td>T3 p.1</td>
+      <td><strong>damner, -able, -ation</strong></td>
+      <td style="color:#e67e22"><em>able</em></td>
+      <td style="color:#c0392b"><em></em></td>
+      <td style="font-size:.8em">dâner, donner, -âbe, -âve, -âcion, -chon; faire damner qn fé ddminer (F ; fé dom</td>
+    </tr>
+    <tr>
+      <td>T3 p.1</td>
+      <td><strong>vulve, surtout de vache, etc</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>are</em></td>
+      <td style="font-size:.8em">nale (nature La Gleize ; -ore Jalhay, -are</td>
+    </tr>
+    <tr>
+      <td>T3 p.2</td>
+      <td><strong>cabinet</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>amon</em></td>
+      <td style="font-size:.8em">voy. débarras ; ~ de verdure glorièle ; ~ d'aisances cabinet ; comun; comôdilè, </td>
+    </tr>
+    <tr>
+      <td>T3 p.2</td>
+      <td><strong>garantir</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>abri</em></td>
+      <td style="font-size:.8em">garanti (arch. waranli F; -di F, Stav. ; wèrandi Esneux, Wanne...) ; assurer; rè</td>
+    </tr>
+    <tr>
+      <td>T3 p.2</td>
+      <td><strong>imiter, -able, -ation, -ateur</strong></td>
+      <td style="color:#e67e22"><em>able</em></td>
+      <td style="color:#c0392b"><em></em></td>
+      <td style="font-size:.8em">imiter, -âbeou -âve, -âcion, -àchon, -eu ou -aleûr; fê come... ; sûre l'ègzimpe </td>
+    </tr>
+    <tr>
+      <td>T3 p.2</td>
+      <td><strong>paillasson</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>abri</em></td>
+      <td style="font-size:.8em">payasson (F ; néol.  paliasson) ; —de table cleûzèle ; abri fait de ~, voy. ABRI</td>
+    </tr>
+    <tr>
+      <td>T3 p.2</td>
+      <td><strong>racheter, -able</strong></td>
+      <td style="color:#e67e22"><em>able</em></td>
+      <td style="color:#c0392b"><em></em></td>
+      <td style="font-size:.8em">ratch'ter, -âbe, -âve; voy. acheter, rédimer.</td>
+    </tr>
+    <tr>
+      <td>T3 p.3</td>
+      <td><strong>abominer, -able, -ableuiciit, -ation</strong></td>
+      <td style="color:#e67e22"><em>able</em></td>
+      <td style="color:#c0392b"><em>able</em></td>
+      <td style="font-size:.8em">abo miner, -âbe, -âbeminl, -âcion, -clion; voy. AFFREUX, DÉTESTER, -ABLE, HAÏR, </td>
+    </tr>
+    <tr>
+      <td>T3 p.3</td>
+      <td><strong>abri rudimentaire</strong></td>
+      <td style="color:#e67e22"><em>abri</em></td>
+      <td style="color:#c0392b"><em>abri</em></td>
+      <td style="font-size:.8em">ahouta (Durbuy) ; contre la pluie liouriha (Jalhay ; hourihèle, Fig. 736 : abri </td>
+    </tr>
+    <tr>
+      <td>T3 p.3</td>
+      <td><strong>arch</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>able</em></td>
+      <td style="font-size:.8em">handèle, t. négocier, -able, -ation, -ant, -e, -ateur, -atrice négôcî (èmanlchî </td>
+    </tr>
+    <tr>
+      <td>T3 p.3</td>
+      <td><strong>imposer, -able, -ant, -ition</strong></td>
+      <td style="color:#e67e22"><em>able</em></td>
+      <td style="color:#c0392b"><em></em></td>
+      <td style="font-size:.8em">impôzer, -âbe ou -âve, -ant, -ition, -chon.</td>
+    </tr>
+    <tr>
+      <td>T3 p.5</td>
+      <td><strong>2. parage : dans nos</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>amon</em></td>
+      <td style="font-size:.8em">— avå (ou après, èvè, amon) nos-ôtes ; di nos coslés ; avâr- chal, vèr-chal, etc</td>
+    </tr>
+    <tr>
+      <td>T3 p.5</td>
+      <td><strong>déchalasser (la vigne)</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>arme</em></td>
+      <td style="font-size:.8em">di(s)pas'ner (Huy) ; (les fèves) dipîceler. déchanter di(s)lchanler. décharge di</td>
+    </tr>
+    <tr>
+      <td>T3 p.5</td>
+      <td><strong>déchiffrer, -able, -ement</strong></td>
+      <td style="color:#e67e22"><em>able</em></td>
+      <td style="color:#c0392b"><em></em></td>
+      <td style="font-size:.8em">dichîfrer (de-), -âbe, -âve, -èdje (dihyîfrî Vielsalm). déchiqueter dizik'ter ou</td>
+    </tr>
+    <tr>
+      <td>T3 p.5</td>
+      <td><strong>sassoire  du  char, fig. 832</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>armon</em></td>
+      <td style="font-size:.8em">spêge  d'ârmon ; splège (Lierneux) ; spirlége (Couthuin, spur- Ben-Ahin) ; spège</td>
+    </tr>
+    <tr>
+      <td>T3 p.5</td>
+      <td><strong>saumure</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>are</em></td>
+      <td style="font-size:.8em">sâmeûre (-are Verv.) ; voy. SALER, -OIR.</td>
+    </tr>
+    <tr>
+      <td>T3 p.5</td>
+      <td><strong>vénérer, -able, -ation</strong></td>
+      <td style="color:#e67e22"><em>able</em></td>
+      <td style="color:#c0392b"><em></em></td>
+      <td style="font-size:.8em">vénérer, -âbe, -âcion, -chon. vénérien : mal —, voy. syphilis. venelle, voy. fro</td>
+    </tr>
+    <tr>
+      <td>T3 p.5</td>
+      <td><strong>éclabousser</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>avin</em></td>
+      <td style="font-size:.8em">spiler ; dubrisser  (La Gleize, Stav. ; zbrisser Stav., -î Petit-Thier) ; de bou</td>
+    </tr>
+    <tr>
+      <td>T3 p.6</td>
+      <td><strong>hayer, -ement, -eur (houill.)</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>abri</em></td>
+      <td style="font-size:.8em">hayî, -emint (bèzî) ; hayeû. hayon (abri de carrier...), voy. abri. lié, interj.</td>
+    </tr>
+    <tr>
+      <td>T3 p.6</td>
+      <td><strong>ornière</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>adje</em></td>
+      <td style="font-size:.8em">ourbîre (oûr- Sprimont  ; ôr- Esneux ; oûrbî Jupille, Verv., ôrbî Bas senge ; wè</td>
+    </tr>
+    <tr>
+      <td>T3 p.6</td>
+      <td><strong>pour vous ~</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>amon</em></td>
+      <td style="font-size:.8em">èle dit coula po v's-avu èvôye ; on l'a éconduit de chez sa bonne amie on li a f</td>
+    </tr>
+    <tr>
+      <td>T3 p.7</td>
+      <td><strong>barioler, -âge</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>are</em></td>
+      <td style="font-size:.8em">barioler, -èdje; cadjoler (cra- H, F) ; carôlier (qqf. carôyeler), -èdje ; fé dè</td>
+    </tr>
+    <tr>
+      <td>T3 p.8</td>
+      <td><strong>admirer, -able, -ation, -ateur</strong></td>
+      <td style="color:#e67e22"><em>able</em></td>
+      <td style="color:#c0392b"><em></em></td>
+      <td style="font-size:.8em">adm- ou mieux an'mirer, -âbe, -âve, -âcion, -chon, -aleûr ; voy. émerveiller, me</td>
+    </tr>
+    <tr>
+      <td>T3 p.8</td>
+      <td><strong>adorer, -able, -ateur, -ation</strong></td>
+      <td style="color:#e67e22"><em>able</em></td>
+      <td style="color:#c0392b"><em></em></td>
+      <td style="font-size:.8em">adorer, -âbe, -âve, -aleûr, -âcion, -chon.</td>
+    </tr>
+    <tr>
+      <td>T3 p.8</td>
+      <td><strong>hêtre</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>abri</em></td>
+      <td style="font-size:.8em">faw (fâw Seraing, Stoumont  ; fâw Esneux. Huy; fà Antheit; åbe à faw Fexhe-H.-CI</td>
+    </tr>
+    <tr>
+      <td>T3 p.8</td>
+      <td><strong>particulier, -ère, -ement</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>amon</em></td>
+      <td style="font-size:.8em">particulier, -iére, -emint ; être servante chez des — chèrvi amon lès djins.</td>
+    </tr>
+    <tr>
+      <td>T3 p.8</td>
+      <td><strong>ïente</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>are</em></td>
+      <td style="font-size:.8em">finie ; findeûre ; crin ; crèneûre; bileûre; crèveûre ; erège, etc., voy. cre va</td>
+    </tr>
+    <tr>
+      <td>T3 p.9</td>
+      <td><strong>effaroucher, spécial' les poules</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>are</em></td>
+      <td style="font-size:.8em">fé sogne ås (ou lès) poges ; kitchèssî ; èwarer (èwèrer Verv., Esneux, Stav.) ; </td>
+    </tr>
+    <tr>
+      <td>T3 p.9</td>
+      <td><strong>invectiver</strong></td>
+      <td style="color:#e67e22"><em></em></td>
+      <td style="color:#c0392b"><em>alou</em></td>
+      <td style="font-size:.8em">ahouwer  ; årgouwer  ; alou wer; dire dès gros mots à qn ; voy. inju rier.</td>
+    </tr>
+</table>
+
+</body>
+</html>

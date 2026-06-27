@@ -52,6 +52,36 @@ function removeAccents(str) {
     .toLowerCase();
 }
 
+// Extract Main Translation for display next to the headword
+function extractMainTranslation(definition, type) {
+  if (!definition) return '';
+  
+  let cleanDef = definition.trim();
+  
+  // Replace tildes representing the headword
+  cleanDef = cleanDef.replace(/~/g, '');
+  
+  if (type === 'wallon-francais') {
+    // Tome 2: Wallon -> Français. Strip grammatical prefixes
+    cleanDef = cleanDef.replace(/^(m\.|f\.|î\.|v\.\s*tr\.|v\.\s*intr\.|v\.\s*rêfl\.|v\.\s*imp\.|v\.|adj\.|adv\.|prép\.|conj\.|interj\.|loc\.|n\.pr\.|pron\.|num\.|art\.|part\.|suff\.|préf\.)\s*,?\s*/i, '');
+    
+    // Remove all parenthetical/bracket remarks to avoid issues with punctuation inside them
+    let textNoParens = cleanDef.replace(/\([^)]*\)/g, '').replace(/\[[^\]]*\]/g, '').trim();
+    
+    // Split by ';' or ':' or ',' or '.' to get first translation
+    let match = textNoParens.split(/[:;,.]/)[0].trim();
+    return match || '...';
+  } else {
+    // Tome 3: Français -> Wallon.
+    // Remove all parenthetical/bracket remarks to avoid issues with punctuation inside them
+    let textNoParens = cleanDef.replace(/\([^)]*\)/g, '').replace(/\[[^\]]*\]/g, '').trim();
+    
+    // Split by ';' or ':' or ',' to get the first translation
+    let match = textNoParens.split(/[:;,]/)[0].trim();
+    return match || '...';
+  }
+}
+
 // LCG Pseudo-Random Generator (seeded by date for consistent daily word)
 function getDailySeed() {
   const today = new Date();
@@ -75,10 +105,13 @@ function getEntryKey(entry) {
 // Initialize Application
 async function init() {
   try {
-    const response = await fetch('dico.json');
-    if (!response.ok) throw new Error("Impossible de charger dico.json");
-    
-    dictionary = await response.json();
+    if (window.dictionaryData && window.dictionaryData.length > 0) {
+      dictionary = window.dictionaryData;
+    } else {
+      const response = await fetch('dico.json');
+      if (!response.ok) throw new Error("Impossible de charger dico.json");
+      dictionary = await response.json();
+    }
     
     // Load Favorites & History from LocalStorage
     loadFavorites();
@@ -228,17 +261,24 @@ function setupWordOfTheDay() {
     return;
   }
   
+  const mainTranslation = extractMainTranslation(mot.definition, mot.type);
+  const transClass = mot.type === 'wallon-francais' ? 'francais-text' : 'wallon-text';
+  
   container.innerHTML = `
-    <div class="mot-word" id="mot-du-jour-word">${mot.word}</div>
-    <div class="badge ${mot.type === 'wallon-francais' ? 'badge-w2f' : 'badge-f2w'}" style="margin-left: 0.75rem; vertical-align: middle; display: inline-block;">
+    <div style="display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.5rem;">
+      <div class="mot-word" id="mot-du-jour-word">${mot.word}</div>
+      <span class="word-translation ${transClass}" id="mot-du-jour-trans" style="cursor: pointer;">— ${mainTranslation}</span>
+    </div>
+    <div class="badge ${mot.type === 'wallon-francais' ? 'badge-w2f' : 'badge-f2w'}" style="margin-top: 0.25rem; margin-bottom: 0.5rem; display: inline-block;">
       ${mot.type === 'wallon-francais' ? 'Wallon' : 'Français'}
     </div>
-    <div class="mot-definition" style="margin-top: 0.5rem;">
+    <div class="mot-definition" style="margin-top: 0.25rem;">
       ${formatDefinitionText(mot.definition, mot.word, mot.type)}
     </div>
   `;
   
   document.getElementById('mot-du-jour-word').addEventListener('click', () => openDetailModal(mot));
+  document.getElementById('mot-du-jour-trans').addEventListener('click', () => openDetailModal(mot));
 }
 
 // Parse custom characters and separate French and Wallon visually
@@ -265,7 +305,20 @@ function formatDefinitionText(definition, word, type) {
   } else {
     // Tome 3: Français -> Wallon
     // We style the main definitions as Wallon text (serif/italic), except metadata in brackets/parens.
-    formatted = `<span class="wallon-examples-part">${formatted}</span>`;
+    let defText = formatted;
+    
+    // Strip the main translation from the start of the definition text if present
+    const mainTranslation = extractMainTranslation(definition, type);
+    if (mainTranslation && mainTranslation !== '...') {
+      const rawText = defText.trim();
+      if (rawText.toLowerCase().startsWith(mainTranslation.toLowerCase())) {
+        defText = rawText.substring(mainTranslation.length).trim();
+        // Remove leading comma, semicolon, colon or spaces if left over
+        defText = defText.replace(/^[,\s;.:]+/, '').trim();
+      }
+    }
+    
+    formatted = `<span class="wallon-examples-part">${defText}</span>`;
   }
   
   // Format sub-entries (preceded by '|')
@@ -375,9 +428,15 @@ function renderResults() {
     // Choose font family based on word language
     const wordClass = entry.type === 'wallon-francais' ? 'wallon-text' : 'francais-text';
     
+    const mainTranslation = extractMainTranslation(entry.definition, entry.type);
+    const transClass = entry.type === 'wallon-francais' ? 'francais-text' : 'wallon-text';
+    
     card.innerHTML = `
       <div class="card-top">
-        <span class="card-word ${wordClass}">${entry.word}</span>
+        <div style="display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.5rem;">
+          <span class="card-word ${wordClass}">${entry.word}</span>
+          <span class="word-translation ${transClass}">— ${mainTranslation}</span>
+        </div>
         <span class="badge ${entry.type === 'wallon-francais' ? 'badge-w2f' : 'badge-f2w'}">
           ${entry.type === 'wallon-francais' ? 'Wallon' : 'Français'}
         </span>
@@ -476,7 +535,10 @@ function openDetailModal(entry) {
   const key = getEntryKey(entry);
   const isFav = favorites.has(key);
   
-  modalWord.textContent = entry.word;
+  const mainTranslation = extractMainTranslation(entry.definition, entry.type);
+  const transClass = entry.type === 'wallon-francais' ? 'francais-text' : 'wallon-text';
+  
+  modalWord.innerHTML = `${entry.word} <span class="word-translation ${transClass}">— ${mainTranslation}</span>`;
   modalWord.className = `modal-word ${entry.type === 'wallon-francais' ? 'wallon-text' : 'francais-text'}`;
   
   modalBadge.textContent = entry.type === 'wallon-francais' ? 'Wallon → Français' : 'Français → Wallon';

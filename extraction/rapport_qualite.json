@@ -1,0 +1,369 @@
+{
+  "total": 23568,
+  "needs_review": 1560,
+  "a_ring_corrected": 221,
+  "word_empty": 20,
+  "word_too_long": 0,
+  "def_empty": 157,
+  "def_too_short": 932,
+  "def_too_long": 15,
+  "by_tome": {
+    "2": 8250,
+    "3": 15298
+  },
+  "by_letter": {
+    "a": 2278,
+    "b": 1446,
+    "c": 1872,
+    "d": 1765,
+    "e": 759,
+    "f": 1003,
+    "g": 809,
+    "i": 473,
+    "j": 218,
+    "k": 133,
+    "l": 732,
+    "m": 1329,
+    "n": 316,
+    "o": 426,
+    "p": 1846,
+    "r": 2039,
+    "s": 1389,
+    "t": 1334,
+    "u": 137,
+    "v": 738,
+    "w": 164,
+    "à": 148,
+    "â": 70,
+    "è": 194,
+    "ê": 14,
+    "î": 19,
+    "ô": 48,
+    "û": 12,
+    "h": 608,
+    "q": 129,
+    "z": 19,
+    "é": 377,
+    "«": 25,
+    "ç": 9,
+    "£": 3,
+    "%": 1,
+    "|": 1,
+    "1": 215,
+    "2": 208,
+    "x": 18,
+    "y": 13,
+    "~": 145,
+    "'": 8,
+    "3": 14,
+    "6": 2,
+    "œ": 11,
+    "\"": 4,
+    "<": 6,
+    "=": 6,
+    "•": 7,
+    "4": 1,
+    "\\": 1,
+    "/": 3,
+    "ï": 1,
+    "»": 2
+  },
+  "quality_pct": 99.2,
+  "issues_sample": [
+    {
+      "type": "def_empty",
+      "word": "observer, -âcion, -ehon, -atwére",
+      "tome": 2,
+      "page": 1
+    },
+    {
+      "type": "word_empty",
+      "tome": 2,
+      "page": 2
+    },
+    {
+      "type": "def_empty",
+      "word": "au bélier pour empêcher l'accouplement",
+      "tome": 2,
+      "page": 2
+    },
+    {
+      "type": "def_empty",
+      "word": "incarner, -âeion, -chon, -ation",
+      "tome": 2,
+      "page": 3
+    },
+    {
+      "type": "def_empty",
+      "word": "incorporer",
+      "tome": 2,
+      "page": 3
+    },
+    {
+      "type": "def_empty",
+      "word": "indèpandanee, -ant, -e",
+      "tome": 2,
+      "page": 3
+    },
+    {
+      "type": "def_empty",
+      "word": "infirmerèye. -ier, -ière",
+      "tome": 2,
+      "page": 3
+    },
+    {
+      "type": "def_empty",
+      "word": "inégal, -e, -emint, -ité",
+      "tome": 2,
+      "page": 3
+    },
+    {
+      "type": "word_empty",
+      "tome": 2,
+      "page": 4
+    },
+    {
+      "type": "def_empty",
+      "word": "wangne, -I (arch.), voy, gangne, -",
+      "tome": 2,
+      "page": 4
+    },
+    {
+      "type": "word_empty",
+      "tome": 2,
+      "page": 5
+    },
+    {
+      "type": "def_empty",
+      "word": "délit",
+      "tome": 2,
+      "page": 5
+    },
+    {
+      "type": "def_empty",
+      "word": "vêlîre (La Gleize, Stavelot, etc.)",
+      "tome": 2,
+      "page": 5
+    },
+    {
+      "type": "def_empty",
+      "word": "è-d'vèr, voy. divè",
+      "tome": 2,
+      "page": 5
+    },
+    {
+      "type": "def_empty",
+      "word": "absurdité",
+      "tome": 2,
+      "page": 6
+    },
+    {
+      "type": "def_empty",
+      "word": "balèt, ballet",
+      "tome": 2,
+      "page": 6
+    },
+    {
+      "type": "def_empty",
+      "word": "détraquer",
+      "tome": 2,
+      "page": 6
+    },
+    {
+      "type": "def_empty",
+      "word": "vérole",
+      "tome": 2,
+      "page": 6
+    },
+    {
+      "type": "def_too_long",
+      "word": "fàzon (Verviers)",
+      "len": 2282,
+      "tome": 2,
+      "page": 7
+    },
+    {
+      "type": "def_empty",
+      "word": "féliciter, -âcion, -ehon",
+      "tome": 2,
+      "page": 7
+    },
+    {
+      "type": "def_empty",
+      "word": "gô ou gôt (Verviers, Stavelot, etc.)",
+      "tome": 2,
+      "page": 7
+    },
+    {
+      "type": "word_empty",
+      "tome": 2,
+      "page": 8
+    },
+    {
+      "type": "def_empty",
+      "word": "féroce, -ité",
+      "tome": 2,
+      "page": 8
+    },
+    {
+      "type": "def_empty",
+      "word": "orme",
+      "tome": 2,
+      "page": 8
+    },
+    {
+      "type": "def_empty",
+      "word": "k(i)noye",
+      "tome": 2,
+      "page": 9
+    },
+    {
+      "type": "def_too_long",
+      "word": "lète, lettre",
+      "len": 2220,
+      "tome": 2,
+      "page": 9
+    },
+    {
+      "type": "def_empty",
+      "word": "seannoye (F",
+      "tome": 2,
+      "page": 9
+    },
+    {
+      "type": "def_empty",
+      "word": "vicomte",
+      "tome": 2,
+      "page": 9
+    },
+    {
+      "type": "def_empty",
+      "word": "Victor, Victorine, Tôr, Torine.| victô-",
+      "tome": 2,
+      "page": 9
+    },
+    {
+      "type": "def_empty",
+      "word": "bàpa",
+      "tome": 2,
+      "page": 10
+    },
+    {
+      "type": "def_too_long",
+      "word": "marne, maman",
+      "len": 2039,
+      "tome": 2,
+      "page": 10
+    },
+    {
+      "type": "word_empty",
+      "tome": 2,
+      "page": 11
+    },
+    {
+      "type": "def_empty",
+      "word": "scrupule, scrup(u)leûs, -e, -emint",
+      "tome": 2,
+      "page": 11
+    },
+    {
+      "type": "word_empty",
+      "tome": 2,
+      "page": 13
+    },
+    {
+      "type": "def_empty",
+      "word": "observer, -âcion, -ehon, -atwére",
+      "tome": 2,
+      "page": 13
+    },
+    {
+      "type": "def_empty",
+      "word": "tehàssin, tehâs-",
+      "tome": 2,
+      "page": 13
+    },
+    {
+      "type": "word_empty",
+      "tome": 2,
+      "page": 15
+    },
+    {
+      "type": "def_too_long",
+      "word": "vola, 1. voilà",
+      "len": 2232,
+      "tome": 2,
+      "page": 15
+    },
+    {
+      "type": "def_empty",
+      "word": "paternité, -nél, -e, -emint",
+      "tome": 2,
+      "page": 16
+    },
+    {
+      "type": "def_empty",
+      "word": "tehèrdjeû,-eûse,  tchè-",
+      "tome": 2,
+      "page": 16
+    },
+    {
+      "type": "def_empty",
+      "word": "bateroûle, bat'-",
+      "tome": 2,
+      "page": 17
+    },
+    {
+      "type": "def_empty",
+      "word": "estrade",
+      "tome": 2,
+      "page": 17
+    },
+    {
+      "type": "def_empty",
+      "word": "cavalcade",
+      "tome": 2,
+      "page": 18
+    },
+    {
+      "type": "def_empty",
+      "word": "Cayin, Caïn",
+      "tome": 2,
+      "page": 18
+    },
+    {
+      "type": "def_empty",
+      "word": "héron",
+      "tome": 2,
+      "page": 18
+    },
+    {
+      "type": "word_empty",
+      "tome": 2,
+      "page": 19
+    },
+    {
+      "type": "word_empty",
+      "tome": 2,
+      "page": 20
+    },
+    {
+      "type": "def_empty",
+      "word": "s(i)-fêt, -e",
+      "tome": 2,
+      "page": 20
+    },
+    {
+      "type": "def_empty",
+      "word": "diplôme, -er",
+      "tome": 2,
+      "page": 21
+    },
+    {
+      "type": "def_empty",
+      "word": "pèneûs, -e, penaud, -e, triste, contrit,",
+      "tome": 2,
+      "page": 21
+    }
+  ]
+}

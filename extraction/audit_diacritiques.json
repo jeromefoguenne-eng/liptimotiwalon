@@ -1,0 +1,823 @@
+{
+  "total_entries": 22632,
+  "words_with_special_chars": 9293,
+  "defs_with_special_chars": 20232,
+  "entries_with_a_rond": 3295,
+  "entries_suspect_missing_a_rond": 172,
+  "all_special_chars": {
+    "è": {
+      "count": 17142,
+      "unicode_name": "LATIN SMALL LETTER E WITH GRAVE",
+      "code_point": "U+00E8",
+      "is_expected_wallon": true,
+      "samples": [
+        "daguèt, goudron végétal",
+        "Drwèhe",
+        "drwète (drète F), s.",
+        "dupe, -er, -erèye",
+        "duwèle"
+      ]
+    },
+    "é": {
+      "count": 14317,
+      "unicode_name": "LATIN SMALL LETTER E WITH ACUTE",
+      "code_point": "U+00E9",
+      "is_expected_wallon": true,
+      "samples": [
+        "d [dé], la lettre d",
+        "daguèt, goudron végétal",
+        "duwél, duel",
+        "ewizignére",
+        "fwèrnoûri, fwèrsôlé"
+      ]
+    },
+    "—": {
+      "count": 8367,
+      "unicode_name": "EM DASH",
+      "code_point": "U+2014",
+      "is_expected_wallon": true,
+      "samples": [
+        "knèp: è —",
+        "uni, unir; — part-",
+        "David, David ; — s.",
+        "di — (Ben-Ahin), chardon cardère",
+        "a V —, il a la luette (qui descend)"
+      ]
+    },
+    "û": {
+      "count": 8328,
+      "unicode_name": "LATIN SMALL LETTER U WITH CIRCUMFLEX",
+      "code_point": "U+00FB",
+      "is_expected_wallon": true,
+      "samples": [
+        "dûhâbe, -âve",
+        "eiheûre",
+        "fwèrnoûri, fwèrsôlé",
+        "ki)trûler",
+        "lûteû"
+      ]
+    },
+    "ê": {
+      "count": 7360,
+      "unicode_name": "LATIN SMALL LETTER E WITH CIRCUMFLEX",
+      "code_point": "U+00EA",
+      "is_expected_wallon": true,
+      "samples": [
+        "d'zêrt",
+        "duzêye",
+        "luzêre",
+        "Lûtêr",
+        "nahê"
+      ]
+    },
+    "î": {
+      "count": 7210,
+      "unicode_name": "LATIN SMALL LETTER I WITH CIRCUMFLEX",
+      "code_point": "U+00EE",
+      "is_expected_wallon": true,
+      "samples": [
+        "irégulârité, îréguher, -ère, -éremint",
+        "k(i)vàrtchi (R,G,F),traîner enzigzag",
+        "kîwite  pîwitche",
+        "rabahî",
+        "taburî"
+      ]
+    },
+    "â": {
+      "count": 6650,
+      "unicode_name": "LATIN SMALL LETTER A WITH CIRCUMFLEX",
+      "code_point": "U+00E2",
+      "is_expected_wallon": true,
+      "samples": [
+        "bâbe",
+        "da, dâ, dal, dås, ou mieux d'à, etc.",
+        "dague [dâk], t., dague",
+        "dâ",
+        "dâborer, barbouiller"
+      ]
+    },
+    "à": {
+      "count": 6043,
+      "unicode_name": "LATIN SMALL LETTER A WITH GRAVE",
+      "code_point": "U+00E0",
+      "is_expected_wallon": true,
+      "samples": [
+        "da, dâ, dal, dås, ou mieux d'à, etc.",
+        "duràbe, -àve, durable",
+        "fwite, fwiyàrd",
+        "gàde",
+        "irèparàbe, -âve"
+      ]
+    },
+    "ô": {
+      "count": 4687,
+      "unicode_name": "LATIN SMALL LETTER O WITH CIRCUMFLEX",
+      "code_point": "U+00F4",
+      "is_expected_wallon": true,
+      "samples": [
+        "Babel (ou Babilône)",
+        "fwèrnoûri, fwèrsôlé",
+        "istôriète, -ryin",
+        "k'vôtri (L",
+        "rabadjôye, rabat-djôye"
+      ]
+    },
+    "å": {
+      "count": 3337,
+      "unicode_name": "LATIN SMALL LETTER A WITH RING ABOVE",
+      "code_point": "U+00E5",
+      "is_expected_wallon": true,
+      "samples": [
+        "da, dâ, dal, dås, ou mieux d'à, etc.",
+        "fåt",
+        "bådet",
+        "fade [fåt], fade, insipide",
+        "gårni, garnir"
+      ]
+    },
+    "ç": {
+      "count": 1168,
+      "unicode_name": "LATIN SMALL LETTER C WITH CEDILLA",
+      "code_point": "U+00E7",
+      "is_expected_wallon": true,
+      "samples": [
+        "vâçale",
+        "vâçale",
+        "maçon(fig. 389-390)",
+        "k(i)balanee, balançoire",
+        "ègzôreiler, -çuler, -èdje"
+      ]
+    },
+    "ù": {
+      "count": 726,
+      "unicode_name": "LATIN SMALL LETTER U WITH GRAVE",
+      "code_point": "U+00F9",
+      "is_expected_wallon": true,
+      "samples": [
+        "dèluje [-ùch] (-udje H)",
+        "radjoûr (qqf. -où)",
+        "abùvrer",
+        "deûr (ou moins souvent diveùr)",
+        "ègdùt"
+      ]
+    },
+    "•": {
+      "count": 640,
+      "unicode_name": "BULLET",
+      "code_point": "U+2022",
+      "is_expected_wallon": false,
+      "samples": [
+        "débine (dibène R, W), débine•",
+        "£*»***<*»« a^«i« V ?*.'•/ vt-Oe,!>&**«€ ",
+        "«•pètchî",
+        "antomèye (litt' « anatomie •)",
+        "£••*•••*•*"
+      ]
+    },
+    "»": {
+      "count": 538,
+      "unicode_name": "RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK",
+      "code_point": "U+00BB",
+      "is_expected_wallon": true,
+      "samples": [
+        "balade, « ballade »,promenade",
+        "kinê (R», L, F)",
+        "£*»***<*»« a^«i« V ?*.'•/ vt-Oe,!>&**«€ ",
+        "d(i)hàhiné (R, G), « dégingandé »",
+        "louwé (twé R», L)"
+      ]
+    },
+    "«": {
+      "count": 499,
+      "unicode_name": "LEFT-POINTING DOUBLE ANGLE QUOTATION MARK",
+      "code_point": "U+00AB",
+      "is_expected_wallon": true,
+      "samples": [
+        "balade, « ballade »,promenade",
+        "«cèle, ficelle",
+        "«ehe(atténuatif defoute)",
+        "£*»***<*»« a^«i« V ?*.'•/ vt-Oe,!>&**«€ ",
+        "«porté"
+      ]
+    },
+    "œ": {
+      "count": 347,
+      "unicode_name": "LATIN SMALL LIGATURE OE",
+      "code_point": "U+0153",
+      "is_expected_wallon": false,
+      "samples": [
+        "èdurei, endurcir (le cœur)",
+        "maneûve, 1. t, manœuvre",
+        "flotch'ter, garnir de nœuds de rubans",
+        "eûve(néol.), œuvre(decharité, d'art)",
+        "ehè-d'eûve (néol.), chef-d'œuvre"
+      ]
+    },
+    "É": {
+      "count": 339,
+      "unicode_name": "LATIN CAPITAL LETTER E WITH ACUTE",
+      "code_point": "U+00C9",
+      "is_expected_wallon": true,
+      "samples": [
+        "Édjipe [i-], Egypte",
+        "Érôde [ê*-], Hérode",
+        "Ében",
+        "COQUILLE, HARDÉ,  MOYEU, NICHET",
+        "Émael"
+      ]
+    },
+    "ï": {
+      "count": 191,
+      "unicode_name": "LATIN SMALL LETTER I WITH DIAERESIS",
+      "code_point": "U+00EF",
+      "is_expected_wallon": true,
+      "samples": [
+        "Calfe, Caïphe",
+        "digue [dïk], digue",
+        "hère [-i-], haïr",
+        "Cayin, Caïn",
+        "d(i)zassôrtï, de-"
+      ]
+    },
+    "£": {
+      "count": 79,
+      "unicode_name": "POUND SIGN",
+      "code_point": "U+00A3",
+      "is_expected_wallon": false,
+      "samples": [
+        "£*»***<*»« a^«i« V ?*.'•/ vt-Oe,!>&**«€ ",
+        "%_£ £ 4F V <? * £ £ #",
+        "|3£t«#IMH'JflH4fc'l",
+        "£••*•••*•*",
+        "ou /£"
+      ]
+    },
+    "ë": {
+      "count": 76,
+      "unicode_name": "LATIN SMALL LETTER E WITH DIAERESIS",
+      "code_point": "U+00EB",
+      "is_expected_wallon": true,
+      "samples": [
+        "pèrët, -e (JupiUe, Trembleur)",
+        "crèche (de Noël)",
+        "cadet, -ette cadëf, -éfe",
+        "2. caillette cdcarëfe»",
+        "Noël ; à La Gleize"
+      ]
+    },
+    "È": {
+      "count": 69,
+      "unicode_name": "LATIN CAPITAL LETTER E WITH GRAVE",
+      "code_point": "U+00C8",
+      "is_expected_wallon": true,
+      "samples": [
+        "Èrnèle",
+        "LAMBEAU, MENU, MOTTE, PIÈCE"
+      ]
+    },
+    "°": {
+      "count": 56,
+      "unicode_name": "DEGREE SIGN",
+      "code_point": "U+00B0",
+      "is_expected_wallon": false,
+      "samples": [
+        "DL, v°"
+      ]
+    },
+    "Ê": {
+      "count": 47,
+      "unicode_name": "LATIN CAPITAL LETTER E WITH CIRCUMFLEX",
+      "code_point": "U+00CA",
+      "is_expected_wallon": true,
+      "samples": []
+    },
+    "Ô": {
+      "count": 36,
+      "unicode_name": "LATIN CAPITAL LETTER O WITH CIRCUMFLEX",
+      "code_point": "U+00D4",
+      "is_expected_wallon": true,
+      "samples": [
+        "Ode [Ôt]",
+        "godje [gÔlch; qqf. kÔtch : G 512]",
+        "gros, grosse [-Ô-]",
+        "bràwe (-Ô-"
+      ]
+    },
+    "À": {
+      "count": 27,
+      "unicode_name": "LATIN CAPITAL LETTER A WITH GRAVE",
+      "code_point": "U+00C0",
+      "is_expected_wallon": true,
+      "samples": [
+        "Verv., -îÀ- JupiUe, Hognoui",
+        "çÀ; ~ le guilledou, la prétantaine"
+      ]
+    },
+    "Ç": {
+      "count": 22,
+      "unicode_name": "LATIN CAPITAL LETTER C WITH CEDILLA",
+      "code_point": "U+00C7",
+      "is_expected_wallon": true,
+      "samples": []
+    },
+    "Ï": {
+      "count": 10,
+      "unicode_name": "LATIN CAPITAL LETTER I WITH DIAERESIS",
+      "code_point": "U+00CF",
+      "is_expected_wallon": false,
+      "samples": [
+        "vélo [vêlÏÏ], vélo"
+      ]
+    },
+    "Â": {
+      "count": 9,
+      "unicode_name": "LATIN CAPITAL LETTER A WITH CIRCUMFLEX",
+      "code_point": "U+00C2",
+      "is_expected_wallon": true,
+      "samples": []
+    },
+    "Î": {
+      "count": 5,
+      "unicode_name": "LATIN CAPITAL LETTER I WITH CIRCUMFLEX",
+      "code_point": "U+00CE",
+      "is_expected_wallon": true,
+      "samples": [
+        "louwi (-Î F"
+      ]
+    },
+    "Ù": {
+      "count": 4,
+      "unicode_name": "LATIN CAPITAL LETTER U WITH GRAVE",
+      "code_point": "U+00D9",
+      "is_expected_wallon": true,
+      "samples": [
+        "numéro, ni-, lu-, Ù-, numéro",
+        "numéro, ni-, lu-, Ù-, numéro"
+      ]
+    },
+    "„": {
+      "count": 4,
+      "unicode_name": "DOUBLE LOW-9 QUOTATION MARK",
+      "code_point": "U+201E",
+      "is_expected_wallon": false,
+      "samples": [
+        "tchike, f„ chique de tabac"
+      ]
+    },
+    "Ë": {
+      "count": 4,
+      "unicode_name": "LATIN CAPITAL LETTER E WITH DIAERESIS",
+      "code_point": "U+00CB",
+      "is_expected_wallon": false,
+      "samples": []
+    },
+    "Û": {
+      "count": 4,
+      "unicode_name": "LATIN CAPITAL LETTER U WITH CIRCUMFLEX",
+      "code_point": "U+00DB",
+      "is_expected_wallon": true,
+      "samples": [
+        "étude [-ÛZ], étude"
+      ]
+    },
+    "♦": {
+      "count": 3,
+      "unicode_name": "BLACK DIAMOND SUIT",
+      "code_point": "U+2666",
+      "is_expected_wallon": false,
+      "samples": []
+    },
+    "Œ": {
+      "count": 3,
+      "unicode_name": "LATIN CAPITAL LIGATURE OE",
+      "code_point": "U+0152",
+      "is_expected_wallon": false,
+      "samples": []
+    },
+    "©": {
+      "count": 2,
+      "unicode_name": "COPYRIGHT SIGN",
+      "code_point": "U+00A9",
+      "is_expected_wallon": false,
+      "samples": []
+    },
+    "€": {
+      "count": 1,
+      "unicode_name": "EURO SIGN",
+      "code_point": "U+20AC",
+      "is_expected_wallon": false,
+      "samples": [
+        "£*»***<*»« a^«i« V ?*.'•/ vt-Oe,!>&**«€ "
+      ]
+    },
+    "®": {
+      "count": 1,
+      "unicode_name": "REGISTERED SIGN",
+      "code_point": "U+00AE",
+      "is_expected_wallon": false,
+      "samples": []
+    }
+  },
+  "missing_a_rond_sample": [
+    {
+      "word": "danse",
+      "definition": "djouweû d' —, ménétrier (voy. mèstré) ; inlrer èl — ; aler al —, aller au bal; cori lès—,courir les ",
+      "match_word": null,
+      "match_def": "amon",
+      "tome": 2,
+      "page": 3
+    },
+    {
+      "word": "dâner, danner [dô-, dâ-], damner",
+      "definition": "n-a s' feume quel fêl — (voy. dâminer) ; dj'a on clå qui m' fêl — mârlîr; — ine åme dànêye ; soufri ",
+      "match_word": null,
+      "match_def": "able",
+      "tome": 2,
+      "page": 3
+    },
+    {
+      "word": "racomôder,  -onder, qqf.rak(i)môder",
+      "definition": "rac commoder : dji racomôde Vârmâ ; il èstît d' brogne, onlès-aracomôde, réconciUés- [-âbe -âve, -ab",
+      "match_word": null,
+      "match_def": "able",
+      "tome": 2,
+      "page": 3
+    },
+    {
+      "word": "omèye (R, L, G",
+      "definition": "-éye Jalhay), mou, malléable, flexible : mi roncin a lès djèrèls omèyes (R2)- 1. on, pr. ou s. in- d",
+      "match_word": null,
+      "match_def": "amon",
+      "tome": 2,
+      "page": 4
+    },
+    {
+      "word": "warandi (Sprimont",
+      "definition": "-fi F), wèrandi (Esneux, etc.), garantir : si — dé vini, de solo. Voy. garanti. | warant (F), voy. g",
+      "match_word": null,
+      "match_def": "abri",
+      "tome": 2,
+      "page": 4
+    },
+    {
+      "word": "magna",
+      "definition": "bouche (syn. rare de djêve, gueûye ; voy. amagna) : clô V —; dji v' frè péter vosse —, je vous souff",
+      "match_word": null,
+      "match_def": "awe",
+      "tome": 2,
+      "page": 5
+    },
+    {
+      "word": "sansoûler (F), ord* sansouwer",
+      "definition": "si —, s'exténuer, s'épuiser (à la peine) : dji m' sansowe (-ouwêye) li cwér èi Vàme a-z-o- vrer ; —i",
+      "match_word": null,
+      "match_def": "awe",
+      "tome": 2,
+      "page": 5
+    },
+    {
+      "word": "calmène, calamine",
+      "definition": "ovrer al —, tra vailler à l'exploitation de la calamine, calmotrê (G, F), m., gamin, mioche, calmous",
+      "match_word": null,
+      "match_def": "amon",
+      "tome": 2,
+      "page": 6
+    },
+    {
+      "word": "dètoûrnèmint (néol.), détournement",
+      "definition": "ti — d' Moûse, de la Meuse ; Ua fêtdès —amon s' messe. | détourner (néol.), détourner : on l'a détou",
+      "match_word": null,
+      "match_def": "amon",
+      "tome": 2,
+      "page": 6
+    },
+    {
+      "word": "détacher, détacher",
+      "definition": "ses parints l'ont détaché di s' crapôde; i s' détache di lèy (arch. dilèlchl dans ce sens; voy. alac",
+      "match_word": null,
+      "match_def": "able",
+      "tome": 2,
+      "page": 6
+    },
+    {
+      "word": "vert (-é-, -ê-)",
+      "definition": "vête, vert, -e : vêrt-pèheû (Verviers), martin-pêcheur, voy. péZieû ; vête djole, chou vert ; dèl vê",
+      "match_word": null,
+      "match_def": "adje",
+      "tome": 2,
+      "page": 6
+    },
+    {
+      "word": "caloner (qqf. canoner), canonner",
+      "definition": "-r— assaillir à coups de projectiles : nos l'avans caloné d' houyois d' ntvaye. \\ -âde, f., canonnad",
+      "match_word": null,
+      "match_def": "abri",
+      "tome": 2,
+      "page": 7
+    },
+    {
+      "word": "dèzir, d'zlr, désir",
+      "definition": "continterses d'zîrs. \\ -er : i d(è)zîretol çou qu'iveut. ]-âbe, -âve, -able. | -eus,-e, -eux, -se: d",
+      "match_word": null,
+      "match_def": "able",
+      "tome": 2,
+      "page": 7
+    },
+    {
+      "word": "måle",
+      "definition": "(fém. de md 2, et de mâva), 1. maie, mauvaise, méchante : n'a nou mâva côp (ou i h court nou risse) ",
+      "match_word": null,
+      "match_def": "avin",
+      "tome": 2,
+      "page": 9
+    },
+    {
+      "word": "d",
+      "definition": "i chlïrer. -âbe ou -âve, -èdje, de-, déchiffrer, -able, -ement",
+      "match_word": null,
+      "match_def": "able",
+      "tome": 2,
+      "page": 10
+    },
+    {
+      "word": "goumaye",
+      "definition": "(qqf. cou-), t., «coumaille», agglomérat,de substances (minerai, argile durcie au feu, etc), dont la",
+      "match_word": null,
+      "match_def": "aye",
+      "tome": 2,
+      "page": 10
+    },
+    {
+      "word": "ad'Ié",
+      "definition": "et prép., auprès : i nèl qwite måy, il est lofer —; i gmeûre a Grim'- gnêye, ~ Lldje, à GriVegnée-le",
+      "match_word": null,
+      "match_def": "amon",
+      "tome": 2,
+      "page": 11
+    },
+    {
+      "word": "adjineer",
+      "definition": "ou ord' adjineener, -ins'ner (néol. -ans'ner), agencer, ajuster : in- ovrèdje qu'est ma adjins'né ni",
+      "match_word": null,
+      "match_def": "amon",
+      "tome": 2,
+      "page": 11
+    },
+    {
+      "word": "man'ç'rèye  (F, H). | man'ciant, -e",
+      "definition": "me naçant, -e. manèdje, m., 1. ménage : Uni —; si mète è —; fé mâva —; on k'tape —; feume di —, ména",
+      "match_word": null,
+      "match_def": "arme",
+      "tome": 2,
+      "page": 11
+    },
+    {
+      "word": "vindâbe, -âve",
+      "definition": "ou vindûie (vindissîre Huy), vendable, de vente facile. | vindâhe, t., moment propice pour la vente.",
+      "match_word": null,
+      "match_def": "amon",
+      "tome": 2,
+      "page": 11
+    },
+    {
+      "word": "â-d'foû, au-dehors",
+      "definition": "voy. d'foû. ad'hinde, v. tr. et intr., descendre (vers celui qui parle) : ad'hindez m' paraplu, i va",
+      "match_word": null,
+      "match_def": "adje",
+      "tome": 2,
+      "page": 11
+    },
+    {
+      "word": "adon (qqf. anon), alors",
+      "definition": "on fêl coula asleûre corne ~ ; adon-pwis, après quoi : nos nos r'pwèzis a milan vôye, adon-pwis nos ",
+      "match_word": null,
+      "match_def": "able",
+      "tome": 2,
+      "page": 12
+    },
+    {
+      "word": "d(i)finde, dis-, défendre",
+      "definition": "i d(is)find 'ne måle case; dji v' di(s)find d'intrer chai; i s'a bin d'findou. | -àbe (F), -able. | ",
+      "match_word": null,
+      "match_def": "able",
+      "tome": 2,
+      "page": 12
+    },
+    {
+      "word": "havèdje",
+      "definition": "action de haver : ti —dès pês ; — t. de houill-, fé s' — (-adje Se raing). Voy haver.",
+      "match_word": null,
+      "match_def": "adje",
+      "tome": 2,
+      "page": 12
+    },
+    {
+      "word": "lîbe, libre",
+      "definition": "il a ses Ichamps lîbes, il a les coudéesfranches; il èsl trop — divins ses d'vises. | libéral (arch.",
+      "match_word": null,
+      "match_def": "amon",
+      "tome": 2,
+      "page": 12
+    },
+    {
+      "word": "vinta",
+      "definition": "vanne, vantail d'une vanne : leverV — po fé aler Vêwe so Vmolin. [Anc. fr. ventait, dér. de vent, -e",
+      "match_word": null,
+      "match_def": "amon",
+      "tome": 2,
+      "page": 12
+    },
+    {
+      "word": "dlhê",
+      "definition": "(Hesbaye),  dîhin  (Liers), dizeau, tas de dix gerbes : mêle è —. Voy. copale, tassé. a iihèdje (dih",
+      "match_word": null,
+      "match_def": "arme",
+      "tome": 2,
+      "page": 15
+    },
+    {
+      "word": "haylme, qqf. -Ine, haine, néol. hinne",
+      "definition": "il a'ne — conle di mi ; prinde ine — conte ine djint. Voy. Zié 4, hère. haytre (Ziè- Huy, Verviers),",
+      "match_word": null,
+      "match_def": "abri",
+      "tome": 2,
+      "page": 15
+    },
+    {
+      "word": "ratcheter, racheter",
+      "definition": "si —, anc', se payer un remplaçant (à l'armée) ; — dès bans d' marièdje, payer à l'égUse pour ne fai",
+      "match_word": null,
+      "match_def": "able",
+      "tome": 2,
+      "page": 15
+    },
+    {
+      "word": "ratrêre, attirer ou ramener (qn) à soi",
+      "definition": "èle ratrêt los lès djonnes-omes de vinâve ; ci hèst nin insi qui v' ratrêrez voste ome ; on riyant m",
+      "match_word": null,
+      "match_def": "abri",
+      "tome": 2,
+      "page": 15
+    },
+    {
+      "word": "èsprinde, allumer",
+      "definition": "dj'èsprind m' pipe ; èsprindez V lampe; li feû n'est nin bin espris; li lampe è-st-èsprise; — intr.,",
+      "match_word": null,
+      "match_def": "alou",
+      "tome": 2,
+      "page": 15
+    },
+    {
+      "word": "gueûzer",
+      "definition": "gueuser, avoir faim (pår di sette ou pauvreté) : ongueûzêye qwand on hoûveûre nin; a-l-on gueûzé de ",
+      "match_word": null,
+      "match_def": "aye",
+      "tome": 2,
+      "page": 17
+    },
+    {
+      "word": "Guèminih, Gui-",
+      "definition": "Gemmenich (village). guère ou ord' guère [-é-], guerre : aler al —; on fêt bin V — so on sôdård près",
+      "match_word": null,
+      "match_def": "amon",
+      "tome": 2,
+      "page": 17
+    },
+    {
+      "word": "louwé (twé R», L)",
+      "definition": "avu Vbrès' foû de - avoir le bras démis, syn. dispale ; avu l djambe foû dé -, voy. dipot'lé. [N exi",
+      "match_word": null,
+      "match_def": "are",
+      "tome": 2,
+      "page": 19
+    },
+    {
+      "word": "matante, 1. tante",
+      "definition": "dji va amon m' — ; ine — di souke, tante non mariée, qui gâte ses neveux ; plais', amon ~, au mont-d",
+      "match_word": null,
+      "match_def": "amon",
+      "tome": 2,
+      "page": 19
+    },
+    {
+      "word": "rèboûrser (néol. ramb-), rembourser",
+      "definition": "dji rèboûrsêye li capital d'ine rinle. Dér- -âve, -able ; -èmint, -ement. (M Fer forgé. xixe siècle.",
+      "match_word": null,
+      "match_def": "able",
+      "tome": 2,
+      "page": 19
+    },
+    {
+      "word": "chèrpint",
+      "definition": "(arch. sièrpinl), serpent, sur tout au fig. : ine linme, ine gueûye di —, langue dé vipère ; que — q",
+      "match_word": null,
+      "match_def": "amon",
+      "tome": 2,
+      "page": 22
+    },
+    {
+      "word": "réforme, -er, -àbe, -âve",
+      "definition": "(ri- F), réforme, réformer, -able.",
+      "match_word": null,
+      "match_def": "able",
+      "tome": 2,
+      "page": 22
+    },
+    {
+      "word": "Bernard, Bernard",
+      "definition": "aler amon —, t. d'argot, au cabinet d'aisances. | Bèrnâr-",
+      "match_word": null,
+      "match_def": "amon",
+      "tome": 2,
+      "page": 23
+    },
+    {
+      "word": "amon (èmon Huy, Verviers)",
+      "definition": "chez : chèrvi — lès djins, être en service chez des particuliers ; ~ Pi'ére, chez Pierre ; ~ nos-ôte",
+      "match_word": "amon",
+      "match_def": "amon",
+      "tome": 2,
+      "page": 24
+    },
+    {
+      "word": "respirer",
+      "definition": "respirons 'ne gote ; i h rèspîre pus ; dj'a V coûVrèce d'alêne, dji rêspîre (ou -éye) mâlâhèyemint. ",
+      "match_word": null,
+      "match_def": "able",
+      "tome": 2,
+      "page": 24
+    },
+    {
+      "word": "rèsbate (Hervé)",
+      "definition": "lès vatches su rèsbatèt, les vaches donnent plus de lait; — à Stavelot : lès vatches rasbatèl. Voy. ",
+      "match_word": null,
+      "match_def": "able",
+      "tome": 2,
+      "page": 24
+    },
+    {
+      "word": "amwèee",
+      "definition": "1. appât (pour prendre surtout le poisson) : mêle ine — (syn. bètchèye) ; ine bâcèle, c'est 'ne bone",
+      "match_word": null,
+      "match_def": "arme",
+      "tome": 2,
+      "page": 25
+    },
+    {
+      "word": "dissoûde, dissoudre (une société)",
+      "definition": "li rmè dissoûl (d'ssoût F) lès Tchambes ; — di Valon (F), ou mieux mète trimper d'l'alon.",
+      "match_word": null,
+      "match_def": "alon",
+      "tome": 2,
+      "page": 25
+    },
+    {
+      "word": "rèssâver",
+      "definition": "si —,s'enfuir, se sauver. Voy. rassâver. 1.rèsse, v., être de nouveau : dji k'mince a — a mi-âhe ; d",
+      "match_word": null,
+      "match_def": "adje",
+      "tome": 2,
+      "page": 25
+    },
+    {
+      "word": "apèzanti, appesantir, alourdir",
+      "definition": "i s'apè- zanlih avou l'adje ; ni v' lèytz nin insi — a m' brès'; l'èfanl keûve ine maladèye, i s' lè",
+      "match_word": null,
+      "match_def": "adje",
+      "tome": 2,
+      "page": 30
+    },
+    {
+      "word": "rie'mander, rik'-, recommander",
+      "definition": ". — 'ne lèle ; dji rh ric'mande ; — si-âme à bon Diu ; spécial' recommander au prône (un défunt) : o",
+      "match_word": null,
+      "match_def": "able",
+      "tome": 2,
+      "page": 30
+    },
+    {
+      "word": "aplé, s.",
+      "definition": "rucher, abri des ruches ; voy. api.[Latin appliclum.] apliquer,appliquer :s'—a bin fé. | apli- câcio",
+      "match_word": null,
+      "match_def": "abri",
+      "tome": 2,
+      "page": 31
+    },
+    {
+      "word": "Cocagne",
+      "definition": "payis d' — ; mat d' —. cocher, m., cocher : on — d' vijilante. \\ coehére : pmète —>, porte cochère. ",
+      "match_word": null,
+      "match_def": "amon",
+      "tome": 2,
+      "page": 31
+    },
+    {
+      "word": "r(i)doter, redouter",
+      "definition": "dji r'dole cist-ome la. | -àbe, -able.",
+      "match_word": null,
+      "match_def": "able",
+      "tome": 2,
+      "page": 33
+    }
+  ]
+}
